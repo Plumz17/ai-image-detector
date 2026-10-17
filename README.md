@@ -35,15 +35,18 @@ ai-image-detector/
 ## How it works
 
 ```mermaid
-flowchart LR
-    C[Web or mobile app] -->|POST /predict, image file| M[main.py<br/>FastAPI]
-    M -->|checks: size, type, rate limit| P[pipeline.py]
-    P --> S[Cut into square crops]
-    S --> T[Smash and reconstruct<br/>+ 30 high-pass filters]
-    T --> N[CNN feature extractor<br/>PyTorch]
-    N --> V[SVM classifier]
-    V --> R[Majority vote over crops]
-    R -->|label, crops, fake ratio| C
+flowchart TB
+    subgraph server["1. Server (checks the upload)"]
+        direction LR
+        C[Web or mobile app] -->|POST /predict, image file| M[main.py<br/>FastAPI]
+        M -->|size, rate limit| P[pipeline.py<br/>image checks]
+        P --> S[Cut into<br/>square crops]
+    end
+    subgraph model["2. Model (runs once per crop)"]
+        direction LR
+        T[Smash and reconstruct<br/>+ 30 high-pass filters] --> N[CNN feature<br/>extractor] --> V[SVM<br/>classifier] --> R[Majority vote<br/>over crops] --> O[Response: label,<br/>crops, fake ratio]
+    end
+    server --> model
 ```
 
 **The model (PatchCraft).** Each image is cut into square crops. Each crop is split into small 32×32 tiles, and the tiles are sorted by how much the neighbouring pixels differ. The busiest half is shuffled into one "rich texture" image and the calmest half into a "poor texture" image. This removes what is in the picture and keeps only the texture. Thirty high-pass filters bring out the fine pixel noise, a small convolutional neural network (CNN) turns the pair into 32 numbers, and an SVM classifier decides real or fake for that crop. The crops then vote, and the image is `fake` if more than half of the crops say fake.
