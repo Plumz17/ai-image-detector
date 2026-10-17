@@ -4,3 +4,8 @@ opencv-python==5.0.0.93
 torch==2.11.0
 torchvision==0.26.0
 scikit-learn==1.6.1
+fastapi==0.143.2
+uvicorn==0.54.0
+python-multipart==0.0.32
+python-dotenv==1.2.4
+slowapi==0.1.10
