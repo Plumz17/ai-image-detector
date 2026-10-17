@@ -36,6 +36,10 @@ class ServerBusy(PipelineError):
     status_code = 503
 
 
+class ModelNotLoaded(PipelineError):
+    status_code = 503
+
+
 # Validate the upload before any model work. Raises a PipelineError if it is bad.
 def _validate_image(image_bytes):
     try:
@@ -121,7 +125,7 @@ def load_pipeline():
 
 def predict(image_bytes):
     if _detector is None:
-        raise PipelineError("Model not loaded")
+        raise ModelNotLoaded("Model has not been loaded")
     # Validate outside the lock: bad uploads fail fast and never wait in the queue
     _validate_image(image_bytes)
     if not _lock.acquire(timeout=config.REQUEST_TIMEOUT_SECONDS):
@@ -130,3 +134,7 @@ def predict(image_bytes):
         return _detector.classify(image_bytes)
     finally:
         _lock.release()
+
+
+def is_loaded():
+    return _detector is not None
