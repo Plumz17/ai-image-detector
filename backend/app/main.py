@@ -80,7 +80,7 @@ async def unexpected_error_handler(request: Request, exc: Exception):
 
 # GET /health
 @app.get("/health")
-def check_health():
+async def check_health():
     return {"status": "ok", "model_loaded": pipeline.is_loaded()}
 
 # POST /predict
@@ -103,7 +103,14 @@ def predict(request: Request, file: UploadFile = File()):
     elif len(data) == 0: # Respond with 400 if file is empty
         log.warning("predict id=%s rejected: empty file", request_id)
         return error_response(400, "Empty file.")
-    result = pipeline.predict(data) # If file is valid, predict image
+    try:
+        result = pipeline.predict(data) # If file is valid, predict image
+    except pipeline.PipelineError:
+        raise # Known errors are turned into the contract shape by pipeline_error_handler
+    except Exception:
+        # Answer from inside the route so the response still gets the CORS headers
+        log.exception("Unexpected error in predict id=%s", request_id)
+        return error_response(500, "Internal server error.")
     elapsed_ms = (time.perf_counter() - start) * 1000 # Stop Timer
     # Log prediction
     log.info("predict id=%s label=%s crops=%s ms=%d",
