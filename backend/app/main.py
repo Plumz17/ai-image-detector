@@ -34,7 +34,7 @@ async def lifespan(app: FastAPI):
 
 # The app, rate limiter and CORS.
 limiter = Limiter(key_func=get_remote_address)
-app = FastAPI(title="AI PatchCraft Image Detector", lifespan=lifespan)
+app = FastAPI(title="AI PatchCraft Image Detector", version="0.1", lifespan=lifespan)
 app.state.limiter = limiter
 app.add_middleware(CORSMiddleware, allow_origins=config.CORS_ORIGINS,
                    allow_methods=["GET", "POST"], allow_headers=["*"])
@@ -84,7 +84,13 @@ def check_health():
     return {"status": "ok", "model_loaded": pipeline.is_loaded()}
 
 # POST /predict
-@app.post("/predict")
+@app.post("/predict", summary="Classify one image as real or fake", responses={
+    400: {"description": "No file, not a JPG/PNG, corrupt, empty, too small, or too oddly shaped"},
+    413: {"description": "File is larger than 10 MB"},
+    429: {"description": "Too many requests (rate limit)"},
+    500: {"description": "Unexpected server error"},
+    503: {"description": "Model not loaded, or the server was too busy"},
+})
 # Rate Limiting
 @limiter.limit(config.RATE_LIMIT)
 def predict(request: Request, file: UploadFile = File()):
