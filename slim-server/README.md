@@ -23,7 +23,7 @@ modal setup
 modal deploy modal_app.py      # prints the public HTTPS URL
 ```
 Settings (edit in `modal_app.py`, then deploy again): `CORS_ORIGINS` (websites allowed to call the API from a browser),
-`RATE_LIMIT` (default `10/minute` per client). The app is limited to one container so the free credit cannot run away.
+`RATE_LIMIT` (default `10/minute` per client). `REQUEST_TIMEOUT_SECONDS` (default 30) is how long a request may wait for its turn before getting a 503; set it with an environment variable. The app is limited to one container so the free credit cannot run away.
 
 ## Known differences from `backend/`
 - The original shuffles image tiles at random, so a borderline image can get different labels on different calls.

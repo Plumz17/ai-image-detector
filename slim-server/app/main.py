@@ -22,6 +22,7 @@ logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO").upper(), format="%(asct
 
 MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "model")
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+REQUEST_TIMEOUT_SECONDS = float(os.getenv("REQUEST_TIMEOUT_SECONDS", "30"))   # how long a request may wait for its turn before a 503
 RATE_LIMIT = os.getenv("RATE_LIMIT", "10/minute")      # same setting and default as backend/app/config.py
 MIN_SIDE, MAX_PIXELS, MAX_CROPS = 64, 25_000_000, 8
 state = {}                      # filled at startup: {"params": ..., "interp": ..., "cnn": ...}
@@ -145,8 +146,16 @@ def predict(request: Request, file: UploadFile = File()):
     if "cnn" not in state:
         return error_response(503, "Model has not been loaded")
     validate_image(data)        # before the lock, so bad uploads fail fast
-    with lock:
+    if not lock.acquire(timeout=REQUEST_TIMEOUT_SECONDS):
+        return error_response(503, "Server busy, try again later")
+    try:
         result = np_pipeline.classify(data, state["params"], state["cnn"])
+    except Exception:
+        # Answer from inside the route so the response still gets the CORS headers
+        log.exception("Unexpected error in predict id=%s", request_id)
+        return error_response(500, "Internal server error.")
+    finally:
+        lock.release()
     log.info("predict id=%s label=%s crops=%s ms=%d", request_id, result["label"],
              result["crops_analyzed"], (time.perf_counter() - start) * 1000)
     return {"status": "success", **result}

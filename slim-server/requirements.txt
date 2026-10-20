@@ -1,7 +1,8 @@
-fastapi
-uvicorn
-python-multipart
-numpy
-pillow
-ai-edge-litert
-slowapi
+fastapi==0.152.0
+starlette==1.9.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+numpy==2.5.4
+pillow==13.0.0
+ai-edge-litert==2.3.0
+slowapi==0.1.10
