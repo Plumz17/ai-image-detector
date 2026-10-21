@@ -3,7 +3,13 @@
     "name": "AI Image Detector",
     "slug": "ai-image-detector",
     "plugins": [
-      ["expo-image-picker", { "cameraPermission": "Allow the app to use the camera to check a photo." }]
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow the app to use the camera to check a photo.",
+          "microphonePermission": false
+        }
+      ]
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,6 +30,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cad270a2-023d-4f74-ae76-bf1ae42ce662"
+      }
+    },
+    "owner": "capstone-project-ugm"
   }
 }
