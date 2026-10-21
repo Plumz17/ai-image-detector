@@ -1,3 +1,5 @@
+import { File } from 'expo-file-system';
+
 // API layer for the backend described in docs/api-contract.md. The UI should only call these functions.
 const BASE_URL = (process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/$/, '');
 const MOCK = process.env.EXPO_PUBLIC_API_MOCK === '1';
@@ -12,6 +14,7 @@ export type PredictResult = {
 
 export class ApiError extends Error {
   // status is the HTTP code, or 0 when the server could not be reached
+  detail?: string; // the underlying error text, for debugging
   constructor(public status: number, message: string) {
     super(message);
   }
@@ -30,7 +33,9 @@ async function request(path: string, init?: RequestInit) {
     return body;
   } catch (e) {
     if (e instanceof ApiError) throw e;
-    throw new ApiError(0, 'Could not reach the server. Check your connection and try again.');
+    const err = new ApiError(0, 'Could not reach the server. Check your connection and try again.');
+    err.detail = String(e);
+    throw err;
   } finally {
     clearTimeout(timer);
   }
@@ -42,6 +47,7 @@ export async function health(): Promise<{ modelLoaded: boolean }> {
   return { modelLoaded: !!body.model_loaded };
 }
 
+// mimeType is kept for callers but no longer needed: the file's type is read from the file itself.
 // sizeBytes: pass the picker's fileSize if you have it, so oversized files fail before uploading.
 export async function predict(uri: string, mimeType = 'image/jpeg', sizeBytes?: number): Promise<PredictResult> {
   if (sizeBytes !== undefined && sizeBytes > MAX_BYTES) {
@@ -50,8 +56,9 @@ export async function predict(uri: string, mimeType = 'image/jpeg', sizeBytes?: 
   if (MOCK) return mockPredict(uri);
 
   const form = new FormData();
-  // React Native's FormData reads a file from {uri, name, type}; bytes are sent unchanged
-  form.append('file', { uri, name: mimeType === 'image/png' ? 'image.png' : 'image.jpg', type: mimeType } as any);
+  // Expo's fetch (the global fetch since SDK 53+) needs a real file object (a Blob), not React Native's old {uri, name, type}.
+  // The bytes are sent unchanged: the model reads pixel texture, so never resize or recompress.
+  form.append('file', new File(uri) as any);
   const body = await request('/predict', { method: 'POST', body: form });
   return {
     label: body.label,
