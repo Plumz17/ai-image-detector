@@ -1,0 +1,4 @@
+FROM python:3.12-slim
+# Linux image for the LiteRT conversion step (litert-converter has no Windows build)
+RUN pip install --no-cache-dir litert-torch numpy pillow
+WORKDIR /work

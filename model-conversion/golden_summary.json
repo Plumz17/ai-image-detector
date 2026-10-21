@@ -1,0 +1,570 @@
+{
+ "repeats": 5,
+ "images": [
+  {
+   "image": "ai (1).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (10).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (11).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (12).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (13).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (14).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (15).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (16).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (17).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (18).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (19).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (2).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (20).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (3).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (4).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (5).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (6).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (7).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (8).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "ai (9).png",
+   "expected": "fake",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (1).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (10).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (11).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (12).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (13).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (14).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (15).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (16).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (17).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (18).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (19).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (2).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (20).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "fake",
+    "fake",
+    "fake",
+    "fake",
+    "fake"
+   ],
+   "stable": true,
+   "match_expected": 0
+  },
+  {
+   "image": "no_ai (3).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (4).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (5).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (6).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (7).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "fake",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": false,
+   "match_expected": 4
+  },
+  {
+   "image": "no_ai (8).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  },
+  {
+   "image": "no_ai (9).png",
+   "expected": "real",
+   "crops": 1,
+   "labels": [
+    "real",
+    "real",
+    "real",
+    "real",
+    "real"
+   ],
+   "stable": true,
+   "match_expected": 5
+  }
+ ],
+ "unstable_images": [
+  "no_ai (7).png"
+ ],
+ "total_runs": 200,
+ "runs_matching_expected": 194
+}
