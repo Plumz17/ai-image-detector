@@ -4,6 +4,8 @@ Version 0.1 (draft, 17 Oct 2026). Owner: Anders (backend).
 
 The web and mobile apps are built against this file. I will only add things (new optional fields, new error codes). If I ever need to rename or remove something, I'll tell both teams first.
 
+Both `backend/` and `slim-server/` follow this contract, so the apps do not need to know which one is running.
+
 Base URL: `http://localhost:8000` when running locally. The deployed URL goes here once hosting is chosen.
 Interactive Docs (Swagger UI) is available at `GET /docs`.
 

@@ -2,7 +2,7 @@
 
 A web and mobile app that tells whether an image is real or AI-generated. The detection is done by a backend API that uses the PatchCraft method where it looks at the fine pixel texture of an image, which tends to differ between camera photos and generated images.
 
-This project is made for UGM's capstone project (Semester 5, UGM). The backend is in this repository under `backend/`. The web and mobile apps are built by team members and call the backend through the API described in [docs/api-contract.md](docs/api-contract.md).
+This project is made for UGM's capstone project (Semester 5, UGM). There are two backends in this repository: `backend/` (the reference one, which runs the original model code) and `slim-server/` (a lighter version with the same API). The web and mobile apps are built by team members and call a backend through the API described in [docs/api-contract.md](docs/api-contract.md).
 
 ## What it does
 
@@ -24,7 +24,10 @@ ai-image-detector/
 │   ├── tests/                       sample images for checking the model
 │   ├── requirements.txt             packages needed to run the server
 │   ├── requirements-dev.txt         the same plus tools for development
+│   ├── Dockerfile                   builds the backend as a container image
 │   └── .env.example                 settings you can change
+├── slim-server/           lighter backend, same API (LiteRT + NumPy, no PyTorch)
+├── model-conversion/      scripts and notes on how the model was converted and checked
 ├── docs/
 │   └── api-contract.md              what the web and mobile apps can rely on
 ├── notebooks/                       the original notebook the model code comes from
@@ -98,6 +101,33 @@ Copy `backend/.env.example` to `backend/.env` to change a setting. The file is n
 | `CORS_ORIGINS` | `http://localhost:3000,http://localhost:5173`   | Web addresses allowed to call the API, comma separated   |
 | `RATE_LIMIT`   | `10/minute`                                     | How many requests one client may send                    |
 | `LOG_LEVEL`    | `INFO`                                          | `DEBUG`, `INFO`, `WARNING` or `ERROR`                    |
+
+## Running with Docker
+
+Both backends have a Dockerfile. Docker Desktop must be running. From the `backend/` folder:
+
+```powershell
+docker build -t ai-detector .
+docker run --rm -p 8000:8000 --name aid ai-detector
+```
+
+The image is about 2.3 GB on disk. It installs the CPU-only version of PyTorch, runs as a normal user (not root), and has a health check on `/health`. Settings can be passed with `-e`, for example `-e CORS_ORIGINS=http://localhost:3000`. The `.env` file is not copied into the image.
+
+If the build fails on Windows with a "No such file or directory" error inside the venv folder, the path is too long (Windows limits paths to 260 characters). Use a shorter folder path.
+
+## The slim server
+
+`slim-server/` is a second backend with the same endpoints, errors and limits as `backend/`. It was made by a teammate (GitHub: AkuTampanTay). The CNN was converted to a LiteRT file, and the preprocessing and the SVM were rewritten in NumPy. It does not use PyTorch, OpenCV or scikit-learn, so it needs less memory and starts faster. In our tests the image is about 420 MB and it used about 100 MB of RAM, compared with about 2.3 GB and 320 MB for `backend/`.
+
+Run it the same way with Docker, from the `slim-server/` folder (the port is 8000 inside the container). It reads its settings only from environment variables, not from a `.env` file. How it was checked against the original model, and what was not tested, is in [model-conversion/RESULTS.md](model-conversion/RESULTS.md) and [slim-server/README.md](slim-server/README.md).
+
+Its files are split the same way as `backend/`: `config.py` (settings and limits), `main.py` (the API), `pipeline.py` (image checks, loading the model, `predict`), and `np_pipeline.py` (the PatchCraft preprocessing and SVM, which takes the place of `patchcraft_original.py`).
+
+The two servers agree within the random noise of the model (the preprocessing is random). `backend/` stays the reference, since it runs the thesis author's code unchanged.
+
+## Known limits
+
+The model is weak on compressed images such as JPEG photos from a phone or from the web. This comes from the model itself, so both backends have it. The numbers are in [model-conversion/ACCURACY.md](model-conversion/ACCURACY.md). The result is a vote share of crops, not a probability, so apps should not show it as certain.
 
 ## API
 
