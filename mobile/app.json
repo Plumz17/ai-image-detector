@@ -1,7 +1,10 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "AI Image Detector",
+    "slug": "ai-image-detector",
+    "plugins": [
+      ["expo-image-picker", { "cameraPermission": "Allow the app to use the camera to check a photo." }]
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +13,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.capstone.aiimagedetector",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
