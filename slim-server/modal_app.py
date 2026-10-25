@@ -2,7 +2,7 @@
 import modal
 
 # Web addresses allowed to call the API from a browser (comma separated). Add the website's URL when it exists.
-CORS_ORIGINS = "http://localhost:3000,http://localhost:5173"
+CORS_ORIGINS = "http://localhost:3000,http://localhost:5173,https://ai-image-detector-web-seven.vercel.app"
 
 # Requests one client may send to /predict (same default as the original backend).
 RATE_LIMIT = "10/minute"
