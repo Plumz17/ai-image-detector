@@ -1,66 +1,80 @@
-import { useEffect, useState } from "react";
-import { predictImage, MAX_UPLOAD_BYTES } from "./api.js";
-import UploadForm from "./components/UploadForm.jsx";
-import ResultCard from "./components/ResultCard.jsx";
+import { useState } from "react";
+import { predictImage } from "./api.js";
 
-// status is one of: "idle", "loading", "done", "error"
 export default function App() {
-  const [file, setFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
-  const [status, setStatus] = useState("idle");
-  const [result, setResult] = useState(null);
-  const [error, setError] = useState("");
+  const [dragging, setDragging] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null); // {status, ms, data} from api.js
 
-  // Free the preview URL when it is replaced or the page closes
-  useEffect(() => {
-    return () => {
-      if (previewUrl) URL.revokeObjectURL(previewUrl);
-    };
-  }, [previewUrl]);
-
-  function handleFileChosen(chosen) {
+  // Called when a file is dropped or chosen: show a preview, send it, keep the answer
+  async function handleFile(file) {
+    if (!file) return;
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    setPreviewUrl(URL.createObjectURL(file));
     setResult(null);
-    setError("");
-    if (chosen && chosen.size > MAX_UPLOAD_BYTES) {
-      setFile(null);
-      setPreviewUrl(null);
-      setStatus("error");
-      setError("The file is larger than 10 MB.");
-      return;
-    }
-    setFile(chosen);
-    setPreviewUrl(chosen ? URL.createObjectURL(chosen) : null);
-    setStatus("idle");
+    setLoading(true);
+    setResult(await predictImage(file));
+    setLoading(false);
   }
 
-  async function handleAnalyze() {
-    if (!file) return;
-    setStatus("loading");
-    setError("");
-    try {
-      setResult(await predictImage(file));
-      setStatus("done");
-    } catch (err) {
-      setError(err.message);
-      setStatus("error");
+  function handleDrop(e) {
+    e.preventDefault(); // otherwise the browser opens the image
+    setDragging(false);
+    handleFile(e.dataTransfer.files[0]);
+  }
+
+  // What to show for the answer
+  let summary = "";
+  let summaryClass = "";
+  if (result) {
+    const { status, data } = result;
+    if (status !== null && status < 400 && data.status === "success") {
+      summary = `${data.label.toUpperCase()} (${data.crops_analyzed} crop(s) analyzed, fake_crop_ratio ${data.fake_crop_ratio})`;
+      summaryClass = data.label;
+    } else {
+      summary = (data && data.message) || (typeof data === "string" ? data : "Request failed");
+      summaryClass = "bad";
     }
   }
 
   return (
-    <main className="page">
+    <main>
       <h1>AI Image Detector</h1>
-      <p className="subtitle">Upload a JPG or PNG image to see if it looks AI-generated.</p>
 
-      <UploadForm
-        previewUrl={previewUrl}
-        canAnalyze={Boolean(file) && status !== "loading"}
-        loading={status === "loading"}
-        onFileChosen={handleFileChosen}
-        onAnalyze={handleAnalyze}
-      />
+      <label
+        className={dragging ? "drop-zone over" : "drop-zone"}
+        onDragOver={(e) => {
+          e.preventDefault();
+          setDragging(true);
+        }}
+        onDragLeave={() => setDragging(false)}
+        onDrop={handleDrop}
+      >
+        <span>Drag and drop an image here, or click to choose one</span>
+        {previewUrl && <img src={previewUrl} alt="Selected upload" />}
+        <input
+          type="file"
+          accept="image/jpeg,image/png"
+          hidden
+          onChange={(e) => {
+            handleFile(e.target.files[0]);
+            e.target.value = ""; // so choosing the same file again still counts as a change
+          }}
+        />
+      </label>
 
-      {status === "error" && <p className="error">{error}</p>}
-      {status === "done" && result && <ResultCard result={result} />}
+      {loading && <p>Analyzing...</p>}
+
+      {result && (
+        <section>
+          <p className={`summary ${summaryClass}`}>{summary}</p>
+          <p className="small">
+            {result.status === null ? "no response" : `HTTP ${result.status}`}, {result.ms} ms
+          </p>
+          <pre>{typeof result.data === "string" ? result.data : JSON.stringify(result.data, null, 2)}</pre>
+        </section>
+      )}
     </main>
   );
 }

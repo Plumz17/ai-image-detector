@@ -1,6 +1,6 @@
 # Web app
 
-A React app (built with Vite) where you upload one JPG or PNG image and see if it looks AI-generated. It calls the backend described in [../docs/api-contract.md](../docs/api-contract.md).
+A small React app (built with Vite). You drag an image onto the box (or click it to choose one), it is sent to the backend straight away, and the page shows the label, the crop numbers, the HTTP status and the raw JSON. Errors from the backend are shown the same way. The backend is described in [../docs/api-contract.md](../docs/api-contract.md).
 
 ## Running it
 
@@ -26,14 +26,19 @@ web/
 ├── .env.example                the backend address
 └── src/
     ├── main.jsx                starts React
-    ├── App.jsx                 holds the state: chosen file, loading, result, error
+    ├── App.jsx                 the drop zone, the preview and the answer
     ├── api.js                  the only file that talks to the backend
     ├── styles.css
-    └── components/
-        ├── UploadForm.jsx      file picker, preview, Analyze button
-        └── ResultCard.jsx      shows the answer
+    ├── pages/                  empty for now, for the real UI later
+    │   ├── Home.jsx            the upload page
+    │   └── About.jsx           the about page
+    └── components/             empty for now
+        ├── Navbar.jsx          Home and About links
+        ├── DropZone.jsx        drag and drop box
+        ├── ImagePreview.jsx    the chosen image
+        └── ResultCard.jsx      the answer from the backend
 ```
 
 ## About the result
 
-The backend returns `fake_crop_ratio`, the share of image sections that voted fake. It is not a probability, so the app shows "x of y sections" and never a percentage. The model is also weak on compressed images (JPEG photos, downloaded images), so the app shows a warning under every result.
+The backend returns `fake_crop_ratio`, the share of image sections that voted fake. It is not a probability, so the page shows it as a number next to the crop count and never as a percentage. The model is also weak on compressed images (JPEG photos, downloaded images).
