@@ -10,6 +10,17 @@ This project is made for UGM's capstone project (Semester 5, UGM). There are two
 - The API answers `real` or `fake` (fake means AI-generated), how many crops of the image it looked at, and what share of those crops were judged fake.
 - Images are processed in memory and are never saved.
 
+## Features
+
+- **AI Image Detection:** Classifies uploaded images as `real` or `fake` (AI-generated).
+- **Image Upload:** Supports JPG and PNG images through file browsing or drag-and-drop.
+- **Image Preview:** Displays the selected image before and during analysis.
+- **Prediction Results:** Shows the predicted label, number of analyzed crops, and fake crop ratio.
+- **Model Explanation:** Dedicated About It page explaining the PatchCraft methodology and detection process.
+- **Backend API:** FastAPI-based prediction endpoints with image validation, rate limiting, and error handling.
+- **Lightweight Deployment:** Alternative backend implementation using LiteRT and NumPy.
+- **Privacy-conscious Processing:** Uploaded images are processed in memory and are not saved by the backend.
+
 ## Folder structure
 
 ```
@@ -125,9 +136,18 @@ Its files are split the same way as `backend/`: `config.py` (settings and limits
 
 The two servers agree within the random noise of the model (the preprocessing is random). `backend/` stays the reference, since it runs the thesis author's code unchanged.
 
-## Known limits
+## Known Limitations
 
-The model is weak on compressed images such as JPEG photos from a phone or from the web. This comes from the model itself, so both backends have it. The numbers are in [model-conversion/ACCURACY.md](model-conversion/ACCURACY.md). The result is a vote share of crops, not a probability, so apps should not show it as certain.
+Although the PatchCraft model provides a texture-based approach to AI image detection, it has certain limitations.
+
+- **Image Compression:** The model can perform poorly on compressed images, including JPEG photographs from mobile devices or the web.
+- **Image Processing:** Resizing, compression, and other image modifications can affect the texture patterns used by the detector.
+- **Prediction Uncertainty:** Results are estimates and should not be treated as guaranteed proof of an image's authenticity.
+- **Model Sensitivity:** Different image types and unseen generation methods may affect classification performance.
+
+The `fake_crop_ratio` represents the proportion of analyzed crops classified as fake. It is not a calibrated probability that the entire image is AI-generated.
+
+For additional evaluation details, refer to [model-conversion/ACCURACY.md](model-conversion/ACCURACY.md).
 
 ## API
 
