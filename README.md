@@ -10,6 +10,17 @@ This project is made for UGM's capstone project (Semester 5, UGM). There are two
 - The API answers `real` or `fake` (fake means AI-generated), how many crops of the image it looked at, and what share of those crops were judged fake.
 - Images are processed in memory and are never saved.
 
+## Features
+
+- **AI Image Detection:** Classifies uploaded images as `real` or `fake` (AI-generated).
+- **Image Upload:** Supports JPG and PNG images through file browsing or drag-and-drop.
+- **Image Preview:** Displays the selected image before and during analysis.
+- **Prediction Results:** Shows the predicted label, number of analyzed crops, and fake crop ratio.
+- **Model Explanation:** Dedicated About It page explaining the PatchCraft methodology and detection process.
+- **Backend API:** FastAPI-based prediction endpoints with image validation, rate limiting, and error handling.
+- **Lightweight Deployment:** Alternative backend implementation using LiteRT and NumPy.
+- **Privacy-conscious Processing:** Uploaded images are processed in memory and are not saved by the backend.
+
 ## Folder structure
 
 ```
