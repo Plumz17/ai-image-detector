@@ -3,6 +3,38 @@ import { predictImage } from "./api.js";
 import Navbar from "./components/Navbar.jsx";
 import About from "./pages/About.jsx";
 
+// Turns a successful answer from /predict into plain sentences.
+// The raw response is still shown under "Technical response".
+function describeResult(data) {
+  const total = data.crops_analyzed;
+  // fake_crop_ratio is the share of crops that voted fake, so this is the number of crops
+  const flagged = Math.round(data.fake_crop_ratio * total);
+  const isFake = data.label === "fake";
+
+  const headline = isFake
+    ? "This image is likely AI-generated."
+    : "This image is likely a real photo.";
+
+  let explanation;
+  if (total === 1) {
+    explanation = isFake
+      ? "The detector studied the fine pixel texture of the image and found patterns that are typical of AI-generated images."
+      : "The detector studied the fine pixel texture of the image and found patterns that are typical of real camera photos.";
+  } else if (flagged === total) {
+    explanation = `The image was checked in ${total} parts, and all of them looked AI-generated.`;
+  } else if (flagged === 0) {
+    explanation = `The image was checked in ${total} parts, and none of them looked AI-generated.`;
+  } else if (flagged * 2 === total) {
+    explanation = `The image was checked in ${total} parts, and ${flagged} of them looked AI-generated, exactly half. In a tie, the detector decides by its average confidence across the parts.`;
+  } else {
+    explanation = `The image was checked in ${total} parts, and ${flagged} of them looked AI-generated, which is ${
+      isFake ? "more" : "fewer"
+    } than half.`;
+  }
+
+  return { headline, explanation };
+}
+
 function Home() {
   const [previewUrl, setPreviewUrl] = useState(null);
   const [dragging, setDragging] = useState(false);
@@ -41,13 +73,18 @@ function Home() {
   }
 
   let summary = "";
+  let explanation = "";
   let summaryClass = "";
 
   if (result) {
     const { status, data } = result;
 
-    if (status !== null && status < 400 && data.status === "success") {
-      summary = `${data.label.toUpperCase()} (${data.crops_analyzed} crop(s) analyzed, fake_crop_ratio ${data.fake_crop_ratio})`;
+    if (status === null) {
+      // No answer at all: the technical reason is still in "Technical response"
+      summary = "We could not reach the server. Please check your connection and try again.";
+      summaryClass = "bad";
+    } else if (status < 400 && data.status === "success") {
+      ({ headline: summary, explanation } = describeResult(data));
       summaryClass = data.label;
     } else {
       summary =
@@ -107,6 +144,7 @@ function Home() {
       {result && (
         <section className="result-panel">
           <p className={`summary ${summaryClass}`}>{summary}</p>
+          {explanation && <p className="explanation">{explanation}</p>}
           <p className="small">
             {result.status === null ? "No response" : `HTTP ${result.status}`}
             {" · "}
