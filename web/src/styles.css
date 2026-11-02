@@ -366,6 +366,31 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.5;
 }
 
+.slow-note {
+  margin: -10px 0 22px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reset-button {
+  display: block;
+  margin: 16px auto 0;
+  padding: 9px 18px;
+  border: 1px solid #5a5a5a;
+  border-radius: 999px;
+  background: transparent;
+  color: #f2f2f2;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
 .small {
   margin: 6px 0 14px;
   font-size: 12px;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { predictImage } from "./api.js";
 import Navbar from "./components/Navbar.jsx";
 import About from "./pages/About.jsx";
@@ -40,6 +40,36 @@ function Home() {
   const [dragging, setDragging] = useState(false);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [isJpeg, setIsJpeg] = useState(false);
+  const [slow, setSlow] = useState(false);
+
+  // After 5 seconds of waiting, tell the user the server may be starting up (it sleeps when idle)
+  useEffect(() => {
+    if (!loading) {
+      setSlow(false);
+      return;
+    }
+    const timer = setTimeout(() => setSlow(true), 5000);
+    return () => clearTimeout(timer);
+  }, [loading]);
+
+  // Ctrl+V: use an image from the clipboard (for example a screenshot)
+  useEffect(() => {
+    function handlePaste(e) {
+      const file = e.clipboardData.files[0];
+      if (file) handleFile(file);
+    }
+    window.addEventListener("paste", handlePaste);
+    return () => window.removeEventListener("paste", handlePaste);
+  });
+
+  // "Try another image": clear the preview and the result
+  function reset() {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    setPreviewUrl(null);
+    setResult(null);
+    setIsJpeg(false);
+  }
 
   async function handleFile(file) {
     if (!file) return;
@@ -56,6 +86,7 @@ function Home() {
     if (previewUrl) URL.revokeObjectURL(previewUrl);
 
     setPreviewUrl(URL.createObjectURL(file));
+    setIsJpeg(file.type === "image/jpeg");
     setResult(null);
     setLoading(true);
 
@@ -119,7 +150,8 @@ function Home() {
         <span className="upload-icon">↑</span>
         <strong>Drop your image here</strong>
         <span className="drop-copy">or click to browse your files</span>
-        <span className="file-hint">JPG or PNG · Up to 10 MB</span>
+        <span className="file-hint">JPG or PNG · Up to 10 MB · You can also paste an image with Ctrl+V</span>
+        <span className="file-hint">Your image is analyzed in memory and never stored.</span>
 
         {previewUrl && <img src={previewUrl} alt="Selected upload" />}
 
@@ -134,6 +166,12 @@ function Home() {
         />
       </label>
 
+      {previewUrl && !loading && (
+        <button className="reset-button" onClick={reset}>
+          Try another image
+        </button>
+      )}
+
       {loading && (
         <div className="loading-state">
           <span className="spinner" />
@@ -141,10 +179,22 @@ function Home() {
         </div>
       )}
 
+      {loading && slow && (
+        <p className="slow-note">
+          The server may be starting up. This can take up to 30 seconds.
+        </p>
+      )}
+
       {result && (
         <section className="result-panel">
           <p className={`summary ${summaryClass}`}>{summary}</p>
           {explanation && <p className="explanation">{explanation}</p>}
+          {explanation && isJpeg && (
+            <p className="explanation">
+              Note: photos saved as JPEG, or sent through chat apps, are harder
+              to judge, so this result may be less reliable.
+            </p>
+          )}
           <p className="small">
             {result.status === null ? "No response" : `HTTP ${result.status}`}
             {" · "}
