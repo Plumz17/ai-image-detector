@@ -21,6 +21,33 @@ This project is made for UGM's capstone project (Semester 5, UGM). There are two
 - **Lightweight Deployment:** Alternative backend implementation using LiteRT and NumPy.
 - **Privacy-conscious Processing:** Uploaded images are processed in memory and are not saved by the backend.
 
+## Project status
+
+Last updated: 3 November 2026.
+
+Done:
+- Backend with `/health` and `/predict`, image checks, error handling, rate limit, CORS and logging (`backend/`).
+- API contract in [docs/api-contract.md](docs/api-contract.md).
+- Docker images for both backends.
+- The slim server (LiteRT + NumPy), made by a teammate and checked against the original model.
+- The slim server is deployed on Modal.
+- The web app is deployed on Vercel. It has a Home page (upload and result) and an About It page. The result is written as plain sentences, and the raw response is still shown under "Technical response". It also supports paste with Ctrl+V and shows a note for JPEG files.
+- A demo mobile app exists on the `mobile/app` branch.
+
+In progress:
+- Testing the model. The plan has ten tests (baseline, AI-enhanced real photos, other generators, compression, chat app, resize, crop, screenshot, AI art, and input limits and errors). The baseline uses 100 AI and 100 real images from the test split of the thesis dataset, and every image is run 5 times. The scripts go in `evaluation/` on the `eval/model-testing` branch. The tests are not run yet.
+- Final report (the evaluation chapter is being written).
+- Polish of the web UI, following the Figma design in `UIUX/`.
+
+To do:
+- Add `web/vercel.json` so that opening `/about` directly or refreshing it works on Vercel.
+- Put the deployed backend and web addresses in the contract and in this file.
+- Optional: automated tests, a request timeout in the web app, a check for the 10 MB limit before upload.
+- Final presentation and demo (21 to 27 November).
+
+Open questions:
+- The model is weak on compressed images (see Known Limitations). The tests will measure how much.
+
 ## Folder structure
 
 ```
@@ -42,9 +69,12 @@ ai-image-detector/
 ├── docs/
 │   └── api-contract.md              what the web and mobile apps can rely on
 ├── notebooks/                       the original notebook the model code comes from
-├── web/                             web app (separate team)
-└── mobile/                          mobile app (separate team)
+├── web/                             React web app (Vite), see web/README.md
+├── UIUX/                            notes on the Figma design of the web app
+└── mobile/                          mobile app (separate team, on the mobile/app branch for now)
 ```
+
+The model tests will go in an `evaluation/` folder. It is only on the `eval/model-testing` branch so far.
 
 ## How it works
 
