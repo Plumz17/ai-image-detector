@@ -33,6 +33,8 @@ def list_files(folder):
     # Return the images as "0_real/name.png", sorted
     files = []
     for label in CLASSES:
+        if not (folder / label).exists():
+            continue  # some tests have only one class (for example the enhanced real photos)
         for path in sorted((folder / label).iterdir()):
             if path.suffix.lower() in IMAGE_TYPES:
                 files.append(f"{label}/{path.name}")
