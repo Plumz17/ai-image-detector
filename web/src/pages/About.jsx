@@ -16,6 +16,16 @@ const steps = [
   },
 ];
 
+const team = [
+  { name: "Anders Emmanuel Tan", role: "Project Backend and Web Frontend" },
+  { name: "I Ketut Ezra Hesperos Maska", role: "Project Backend and Mobile Frontend" },
+  { name: "Muhammad Gibran Basyir", role: "Web UI/UX and Frontend" },
+  { name: "Muhammad Keenan Basyir", role: "Web UI/UX and Frontend" },
+  { name: "Aditya Evan Rahmadani", role: "Mobile UI/UX and Frontend" },
+  { name: "Muhammad Guntur Afrianto", role: "PatchCraft Model" },
+  { name: "Afiahayati, S.Kom., M.Cs., Ph.D", role: "Supervisor" },
+];
+
 export default function About() {
   return (
     <main className="about-page">
@@ -83,6 +93,34 @@ export default function About() {
             <span>SVM classifier</span>
             <span>Multi-crop inference</span>
           </div>
+
+          <p className="source">
+            Source: the PatchCraft model was implemented and trained by
+            Muhammad Guntur Afrianto.{" "}
+            <a
+              href="https://www.icicelb.org/ellb/contents/2026/12/elb-17-12-10.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Read the published paper
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="content-label">
+          <h2>Who made it?</h2>
+        </div>
+
+        <div className="content-body">
+          <ul className="team">
+            {team.map((member) => (
+              <li key={member.name}>
+                <span className="team-name">{member.name}</span>
+                <span className="team-role">{member.role}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
