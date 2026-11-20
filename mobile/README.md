@@ -2,7 +2,7 @@
 
 The screens (welcome, home, preview, loading, result, error, about) are in `src/screens`; `App.tsx` switches between them. Only JPG and PNG are accepted, because the server rejects other formats. Network errors are turned into user messages in `src/api/detector.ts`.
 
-The app calls the shared backend described in [../docs/api-contract.md](../docs/api-contract.md). All network code is in `src/api.ts`: UI code should only use `health()` and `predict(uri, mimeType?, sizeBytes?)`, which throw `ApiError` (`status` 0 = server unreachable, `detail` = the underlying error text) with a `message` to show.
+The app calls the shared backend described in [../docs/api-contract.md](../docs/api-contract.md). All network code is in `src/api.ts` (`health()` and `predict(uri, mimeType?, sizeBytes?, signal?)`), which throws `ApiError` (`status` 0 = server unreachable, `detail` = the underlying error text) with a `message`. The screens call `detectImage` in `src/api/detector.ts`, which wraps `predict` and turns errors into the text shown to the user.
 
 ## Run on a phone (Expo Go)
 Needs Node.js, and the Expo Go app from the Play Store. The phone and the PC must be on the same Wi-Fi.
