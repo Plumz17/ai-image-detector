@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "AI Image Detector",
+    "slug": "ai-image-detector",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Select a photo to check with AI Image Detector.",
+          "cameraPermission": "Take a photo to check with AI Image Detector.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.capstone.aiimagedetector",
+      "adaptiveIcon": {
+        "backgroundColor": "#090F1E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cad270a2-023d-4f74-ae76-bf1ae42ce662"
+      }
+    },
+    "owner": "capstone-project-ugm",
+    "scheme": "aiimagedetector",
+    "backgroundColor": "#090F1E"
+  }
+}
