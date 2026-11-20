@@ -1,0 +1,201 @@
+file,true_label,run,http_status,label,crops_analyzed,fake_crop_ratio,ms
+0_real/00069 (14).jpeg,real,1,200,real,1,0.0,325
+0_real/00069 (14).jpeg,real,2,200,real,1,0.0,161
+0_real/00069 (14).jpeg,real,3,200,real,1,0.0,225
+0_real/00069 (14).jpeg,real,4,200,real,1,0.0,169
+0_real/00069 (14).jpeg,real,5,200,real,1,0.0,179
+0_real/00296 (17).jpeg,real,1,200,real,1,0.0,190
+0_real/00296 (17).jpeg,real,2,200,real,1,0.0,179
+0_real/00296 (17).jpeg,real,3,200,real,1,0.0,209
+0_real/00296 (17).jpeg,real,4,200,real,1,0.0,168
+0_real/00296 (17).jpeg,real,5,200,real,1,0.0,194
+0_real/00642 (9).jpeg,real,1,200,fake,1,1.0,175
+0_real/00642 (9).jpeg,real,2,200,fake,1,1.0,149
+0_real/00642 (9).jpeg,real,3,200,fake,1,1.0,174
+0_real/00642 (9).jpeg,real,4,200,fake,1,1.0,151
+0_real/00642 (9).jpeg,real,5,200,fake,1,1.0,183
+0_real/00771 (8).jpeg,real,1,200,real,1,0.0,153
+0_real/00771 (8).jpeg,real,2,200,real,1,0.0,162
+0_real/00771 (8).jpeg,real,3,200,real,1,0.0,252
+0_real/00771 (8).jpeg,real,4,200,real,1,0.0,199
+0_real/00771 (8).jpeg,real,5,200,real,1,0.0,229
+0_real/01167 (9).jpeg,real,1,200,fake,1,1.0,259
+0_real/01167 (9).jpeg,real,2,200,fake,1,1.0,225
+0_real/01167 (9).jpeg,real,3,200,fake,1,1.0,228
+0_real/01167 (9).jpeg,real,4,200,fake,1,1.0,198
+0_real/01167 (9).jpeg,real,5,200,fake,1,1.0,188
+0_real/02022 (4).jpeg,real,1,200,fake,1,1.0,180
+0_real/02022 (4).jpeg,real,2,200,fake,1,1.0,204
+0_real/02022 (4).jpeg,real,3,200,fake,1,1.0,170
+0_real/02022 (4).jpeg,real,4,200,fake,1,1.0,246
+0_real/02022 (4).jpeg,real,5,200,fake,1,1.0,191
+0_real/02135 (15).jpeg,real,1,200,real,1,0.0,195
+0_real/02135 (15).jpeg,real,2,200,real,1,0.0,183
+0_real/02135 (15).jpeg,real,3,200,real,1,0.0,195
+0_real/02135 (15).jpeg,real,4,200,real,1,0.0,150
+0_real/02135 (15).jpeg,real,5,200,real,1,0.0,147
+0_real/02423 (19).jpeg,real,1,200,real,1,0.0,234
+0_real/02423 (19).jpeg,real,2,200,real,1,0.0,199
+0_real/02423 (19).jpeg,real,3,200,real,1,0.0,170
+0_real/02423 (19).jpeg,real,4,200,real,1,0.0,197
+0_real/02423 (19).jpeg,real,5,200,real,1,0.0,177
+0_real/02423 (5).jpeg,real,1,200,fake,1,1.0,215
+0_real/02423 (5).jpeg,real,2,200,fake,1,1.0,171
+0_real/02423 (5).jpeg,real,3,200,fake,1,1.0,200
+0_real/02423 (5).jpeg,real,4,200,fake,1,1.0,161
+0_real/02423 (5).jpeg,real,5,200,fake,1,1.0,163
+0_real/02909 (15).jpeg,real,1,200,fake,1,1.0,201
+0_real/02909 (15).jpeg,real,2,200,fake,1,1.0,165
+0_real/02909 (15).jpeg,real,3,200,real,1,0.0,153
+0_real/02909 (15).jpeg,real,4,200,fake,1,1.0,201
+0_real/02909 (15).jpeg,real,5,200,fake,1,1.0,163
+0_real/03199 (13).jpeg,real,1,200,real,1,0.0,146
+0_real/03199 (13).jpeg,real,2,200,real,1,0.0,241
+0_real/03199 (13).jpeg,real,3,200,real,1,0.0,181
+0_real/03199 (13).jpeg,real,4,200,real,1,0.0,144
+0_real/03199 (13).jpeg,real,5,200,real,1,0.0,244
+0_real/03505 (14).jpeg,real,1,200,real,1,0.0,189
+0_real/03505 (14).jpeg,real,2,200,real,1,0.0,172
+0_real/03505 (14).jpeg,real,3,200,real,1,0.0,184
+0_real/03505 (14).jpeg,real,4,200,fake,1,1.0,149
+0_real/03505 (14).jpeg,real,5,200,real,1,0.0,233
+0_real/03505 (16).jpeg,real,1,200,real,1,0.0,189
+0_real/03505 (16).jpeg,real,2,200,real,1,0.0,198
+0_real/03505 (16).jpeg,real,3,200,real,1,0.0,187
+0_real/03505 (16).jpeg,real,4,200,real,1,0.0,195
+0_real/03505 (16).jpeg,real,5,200,real,1,0.0,189
+0_real/03527 (16).jpeg,real,1,200,real,1,0.0,204
+0_real/03527 (16).jpeg,real,2,200,real,1,0.0,170
+0_real/03527 (16).jpeg,real,3,200,real,1,0.0,220
+0_real/03527 (16).jpeg,real,4,200,real,1,0.0,199
+0_real/03527 (16).jpeg,real,5,200,real,1,0.0,186
+0_real/03634 (9).jpeg,real,1,200,fake,1,1.0,152
+0_real/03634 (9).jpeg,real,2,200,fake,1,1.0,195
+0_real/03634 (9).jpeg,real,3,200,fake,1,1.0,154
+0_real/03634 (9).jpeg,real,4,200,fake,1,1.0,153
+0_real/03634 (9).jpeg,real,5,200,fake,1,1.0,188
+0_real/03679 (14).jpeg,real,1,200,real,1,0.0,191
+0_real/03679 (14).jpeg,real,2,200,real,1,0.0,195
+0_real/03679 (14).jpeg,real,3,200,real,1,0.0,164
+0_real/03679 (14).jpeg,real,4,200,real,1,0.0,201
+0_real/03679 (14).jpeg,real,5,200,real,1,0.0,151
+0_real/03679 (17).jpeg,real,1,200,real,1,0.0,203
+0_real/03679 (17).jpeg,real,2,200,real,1,0.0,176
+0_real/03679 (17).jpeg,real,3,200,real,1,0.0,210
+0_real/03679 (17).jpeg,real,4,200,fake,1,1.0,178
+0_real/03679 (17).jpeg,real,5,200,fake,1,1.0,209
+0_real/03711 (14).jpeg,real,1,200,fake,1,1.0,184
+0_real/03711 (14).jpeg,real,2,200,fake,1,1.0,221
+0_real/03711 (14).jpeg,real,3,200,fake,1,1.0,190
+0_real/03711 (14).jpeg,real,4,200,fake,1,1.0,185
+0_real/03711 (14).jpeg,real,5,200,fake,1,1.0,225
+0_real/06720 (4).jpeg,real,1,200,real,1,0.0,210
+0_real/06720 (4).jpeg,real,2,200,real,1,0.0,182
+0_real/06720 (4).jpeg,real,3,200,real,1,0.0,194
+0_real/06720 (4).jpeg,real,4,200,real,1,0.0,174
+0_real/06720 (4).jpeg,real,5,200,real,1,0.0,192
+0_real/07091.jpeg,real,1,200,real,1,0.0,244
+0_real/07091.jpeg,real,2,200,real,1,0.0,233
+0_real/07091.jpeg,real,3,200,real,1,0.0,199
+0_real/07091.jpeg,real,4,200,real,1,0.0,172
+0_real/07091.jpeg,real,5,200,real,1,0.0,152
+1_fake/03032 (9).jpeg,fake,1,200,real,1,0.0,229
+1_fake/03032 (9).jpeg,fake,2,200,fake,1,1.0,165
+1_fake/03032 (9).jpeg,fake,3,200,fake,1,1.0,159
+1_fake/03032 (9).jpeg,fake,4,200,fake,1,1.0,213
+1_fake/03032 (9).jpeg,fake,5,200,fake,1,1.0,173
+1_fake/03199 (3).jpeg,fake,1,200,fake,1,1.0,159
+1_fake/03199 (3).jpeg,fake,2,200,fake,1,1.0,160
+1_fake/03199 (3).jpeg,fake,3,200,fake,1,1.0,152
+1_fake/03199 (3).jpeg,fake,4,200,fake,1,1.0,219
+1_fake/03199 (3).jpeg,fake,5,200,fake,1,1.0,170
+1_fake/03634 (11).jpeg,fake,1,200,real,1,0.0,152
+1_fake/03634 (11).jpeg,fake,2,200,real,1,0.0,202
+1_fake/03634 (11).jpeg,fake,3,200,real,1,0.0,176
+1_fake/03634 (11).jpeg,fake,4,200,real,1,0.0,237
+1_fake/03634 (11).jpeg,fake,5,200,real,1,0.0,171
+1_fake/03655 (5).jpeg,fake,1,200,fake,1,1.0,151
+1_fake/03655 (5).jpeg,fake,2,200,fake,1,1.0,214
+1_fake/03655 (5).jpeg,fake,3,200,fake,1,1.0,207
+1_fake/03655 (5).jpeg,fake,4,200,fake,1,1.0,194
+1_fake/03655 (5).jpeg,fake,5,200,fake,1,1.0,202
+1_fake/62_adm_153.jpeg,fake,1,200,fake,1,1.0,177
+1_fake/62_adm_153.jpeg,fake,2,200,fake,1,1.0,219
+1_fake/62_adm_153.jpeg,fake,3,200,fake,1,1.0,188
+1_fake/62_adm_153.jpeg,fake,4,200,fake,1,1.0,162
+1_fake/62_adm_153.jpeg,fake,5,200,fake,1,1.0,196
+1_fake/809_sdv5_00100.jpeg,fake,1,200,fake,1,1.0,167
+1_fake/809_sdv5_00100.jpeg,fake,2,200,fake,1,1.0,286
+1_fake/809_sdv5_00100.jpeg,fake,3,200,fake,1,1.0,210
+1_fake/809_sdv5_00100.jpeg,fake,4,200,fake,1,1.0,197
+1_fake/809_sdv5_00100.jpeg,fake,5,200,fake,1,1.0,184
+1_fake/811_sdv5_00195.jpeg,fake,1,200,fake,1,1.0,223
+1_fake/811_sdv5_00195.jpeg,fake,2,200,fake,1,1.0,191
+1_fake/811_sdv5_00195.jpeg,fake,3,200,fake,1,1.0,171
+1_fake/811_sdv5_00195.jpeg,fake,4,200,fake,1,1.0,180
+1_fake/811_sdv5_00195.jpeg,fake,5,200,fake,1,1.0,263
+1_fake/830_sdv5_00039.jpeg,fake,1,200,fake,1,1.0,248
+1_fake/830_sdv5_00039.jpeg,fake,2,200,fake,1,1.0,225
+1_fake/830_sdv5_00039.jpeg,fake,3,200,fake,1,1.0,170
+1_fake/830_sdv5_00039.jpeg,fake,4,200,fake,1,1.0,240
+1_fake/830_sdv5_00039.jpeg,fake,5,200,fake,1,1.0,195
+1_fake/831_sdv5_00039.jpeg,fake,1,200,fake,1,1.0,171
+1_fake/831_sdv5_00039.jpeg,fake,2,200,fake,1,1.0,245
+1_fake/831_sdv5_00039.jpeg,fake,3,200,fake,1,1.0,171
+1_fake/831_sdv5_00039.jpeg,fake,4,200,fake,1,1.0,192
+1_fake/831_sdv5_00039.jpeg,fake,5,200,fake,1,1.0,184
+1_fake/dalle3_103.jpeg,fake,1,200,fake,1,1.0,264
+1_fake/dalle3_103.jpeg,fake,2,200,fake,1,1.0,219
+1_fake/dalle3_103.jpeg,fake,3,200,fake,1,1.0,214
+1_fake/dalle3_103.jpeg,fake,4,200,fake,1,1.0,174
+1_fake/dalle3_103.jpeg,fake,5,200,fake,1,1.0,235
+1_fake/dalle3_147.jpeg,fake,1,200,fake,1,1.0,219
+1_fake/dalle3_147.jpeg,fake,2,200,fake,1,1.0,211
+1_fake/dalle3_147.jpeg,fake,3,200,fake,1,1.0,181
+1_fake/dalle3_147.jpeg,fake,4,200,fake,1,1.0,223
+1_fake/dalle3_147.jpeg,fake,5,200,fake,1,1.0,175
+1_fake/dalle3_45.jpeg,fake,1,200,fake,1,1.0,240
+1_fake/dalle3_45.jpeg,fake,2,200,fake,1,1.0,201
+1_fake/dalle3_45.jpeg,fake,3,200,fake,1,1.0,236
+1_fake/dalle3_45.jpeg,fake,4,200,fake,1,1.0,222
+1_fake/dalle3_45.jpeg,fake,5,200,fake,1,1.0,187
+1_fake/dalle3_47.jpeg,fake,1,200,fake,1,1.0,267
+1_fake/dalle3_47.jpeg,fake,2,200,fake,1,1.0,190
+1_fake/dalle3_47.jpeg,fake,3,200,real,1,0.0,198
+1_fake/dalle3_47.jpeg,fake,4,200,fake,1,1.0,171
+1_fake/dalle3_47.jpeg,fake,5,200,fake,1,1.0,191
+1_fake/dalle3_71.jpeg,fake,1,200,fake,1,1.0,172
+1_fake/dalle3_71.jpeg,fake,2,200,fake,1,1.0,240
+1_fake/dalle3_71.jpeg,fake,3,200,fake,1,1.0,186
+1_fake/dalle3_71.jpeg,fake,4,200,fake,1,1.0,167
+1_fake/dalle3_71.jpeg,fake,5,200,fake,1,1.0,250
+1_fake/midjourney6_101.jpeg,fake,1,200,real,1,0.0,185
+1_fake/midjourney6_101.jpeg,fake,2,200,fake,1,1.0,257
+1_fake/midjourney6_101.jpeg,fake,3,200,real,1,0.0,258
+1_fake/midjourney6_101.jpeg,fake,4,200,fake,1,1.0,259
+1_fake/midjourney6_101.jpeg,fake,5,200,real,1,0.0,199
+1_fake/midjourney6_1157.jpeg,fake,1,200,fake,1,1.0,231
+1_fake/midjourney6_1157.jpeg,fake,2,200,fake,1,1.0,192
+1_fake/midjourney6_1157.jpeg,fake,3,200,fake,1,1.0,237
+1_fake/midjourney6_1157.jpeg,fake,4,200,fake,1,1.0,184
+1_fake/midjourney6_1157.jpeg,fake,5,200,fake,1,1.0,189
+1_fake/midjourney6_1160.jpeg,fake,1,200,fake,1,1.0,285
+1_fake/midjourney6_1160.jpeg,fake,2,200,fake,1,1.0,266
+1_fake/midjourney6_1160.jpeg,fake,3,200,fake,1,1.0,214
+1_fake/midjourney6_1160.jpeg,fake,4,200,fake,1,1.0,199
+1_fake/midjourney6_1160.jpeg,fake,5,200,fake,1,1.0,171
+1_fake/midjourney6_126.jpeg,fake,1,200,fake,1,1.0,238
+1_fake/midjourney6_126.jpeg,fake,2,200,fake,1,1.0,212
+1_fake/midjourney6_126.jpeg,fake,3,200,fake,1,1.0,255
+1_fake/midjourney6_126.jpeg,fake,4,200,fake,1,1.0,176
+1_fake/midjourney6_126.jpeg,fake,5,200,fake,1,1.0,257
+1_fake/sdxl_39.jpeg,fake,1,200,real,1,0.0,189
+1_fake/sdxl_39.jpeg,fake,2,200,fake,1,1.0,166
+1_fake/sdxl_39.jpeg,fake,3,200,fake,1,1.0,265
+1_fake/sdxl_39.jpeg,fake,4,200,fake,1,1.0,209
+1_fake/sdxl_39.jpeg,fake,5,200,real,1,0.0,170
+1_fake/sdxl_52.jpeg,fake,1,200,fake,1,1.0,260
+1_fake/sdxl_52.jpeg,fake,2,200,fake,1,1.0,189
+1_fake/sdxl_52.jpeg,fake,3,200,fake,1,1.0,248
+1_fake/sdxl_52.jpeg,fake,4,200,fake,1,1.0,185
+1_fake/sdxl_52.jpeg,fake,5,200,fake,1,1.0,190

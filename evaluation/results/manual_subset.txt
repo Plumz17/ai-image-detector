@@ -1,0 +1,40 @@
+0_real/02423 (5).png
+0_real/02022 (4).png
+0_real/03505 (14).png
+0_real/00069 (14).png
+0_real/02423 (19).png
+0_real/03505 (16).png
+0_real/00296 (17).png
+0_real/03634 (9).png
+0_real/02135 (15).png
+0_real/03679 (14).png
+0_real/00642 (9).png
+0_real/03711 (14).png
+0_real/00771 (8).png
+0_real/03679 (17).png
+0_real/03199 (13).png
+0_real/03527 (16).png
+0_real/07091.png
+0_real/06720 (4).png
+0_real/02909 (15).png
+0_real/01167 (9).png
+1_fake/831_sdv5_00039.png
+1_fake/809_sdv5_00100.png
+1_fake/dalle3_45.png
+1_fake/03032 (9).png
+1_fake/830_sdv5_00039.png
+1_fake/dalle3_47.png
+1_fake/03199 (3).png
+1_fake/midjourney6_101.png
+1_fake/811_sdv5_00195.png
+1_fake/midjourney6_1157.png
+1_fake/03634 (11).png
+1_fake/midjourney6_126.png
+1_fake/03655 (5).png
+1_fake/midjourney6_1160.png
+1_fake/dalle3_147.png
+1_fake/dalle3_71.png
+1_fake/sdxl_52.png
+1_fake/sdxl_39.png
+1_fake/dalle3_103.png
+1_fake/62_adm_153.PNG

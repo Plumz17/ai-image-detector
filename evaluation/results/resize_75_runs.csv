@@ -1,0 +1,1005 @@
+file,true_label,run,http_status,label,crops_analyzed,fake_crop_ratio,ms
+0_real/00049 (8).png,real,1,0,,,,4133
+0_real/00049 (8).png,real,1,0,,,,4132
+0_real/00049 (8).png,real,1,0,,,,4158
+0_real/00049 (8).png,real,1,0,,,,4162
+0_real/00049 (8).png,real,1,200,real,1,0.0,483
+0_real/00049 (8).png,real,2,200,real,1,0.0,165
+0_real/00049 (8).png,real,3,200,real,1,0.0,170
+0_real/00049 (8).png,real,4,200,real,1,0.0,218
+0_real/00049 (8).png,real,5,200,real,1,0.0,195
+0_real/00069 (12).png,real,1,200,real,1,0.0,257
+0_real/00069 (12).png,real,2,200,real,1,0.0,171
+0_real/00069 (12).png,real,3,200,real,1,0.0,266
+0_real/00069 (12).png,real,4,200,real,1,0.0,183
+0_real/00069 (12).png,real,5,200,real,1,0.0,187
+0_real/00069 (14).png,real,1,200,real,1,0.0,235
+0_real/00069 (14).png,real,2,200,real,1,0.0,194
+0_real/00069 (14).png,real,3,200,real,1,0.0,245
+0_real/00069 (14).png,real,4,200,real,1,0.0,198
+0_real/00069 (14).png,real,5,200,real,1,0.0,175
+0_real/00253 (9).png,real,1,200,real,1,0.0,247
+0_real/00253 (9).png,real,2,200,real,1,0.0,297
+0_real/00253 (9).png,real,3,200,real,1,0.0,228
+0_real/00253 (9).png,real,4,200,real,1,0.0,260
+0_real/00253 (9).png,real,5,200,real,1,0.0,187
+0_real/00296 (17).png,real,1,200,real,1,0.0,218
+0_real/00296 (17).png,real,2,200,real,1,0.0,191
+0_real/00296 (17).png,real,3,200,real,1,0.0,227
+0_real/00296 (17).png,real,4,200,real,1,0.0,281
+0_real/00296 (17).png,real,5,200,real,1,0.0,315
+0_real/00305 (13).png,real,1,200,real,1,0.0,271
+0_real/00305 (13).png,real,2,200,real,1,0.0,205
+0_real/00305 (13).png,real,3,200,real,1,0.0,208
+0_real/00305 (13).png,real,4,200,real,1,0.0,264
+0_real/00305 (13).png,real,5,200,real,1,0.0,315
+0_real/00335 (10).png,real,1,200,real,1,0.0,238
+0_real/00335 (10).png,real,2,200,real,1,0.0,230
+0_real/00335 (10).png,real,3,200,real,1,0.0,208
+0_real/00335 (10).png,real,4,200,real,1,0.0,214
+0_real/00335 (10).png,real,5,200,real,1,0.0,220
+0_real/00335 (12).png,real,1,200,real,1,0.0,219
+0_real/00335 (12).png,real,2,200,real,1,0.0,257
+0_real/00335 (12).png,real,3,200,real,1,0.0,195
+0_real/00335 (12).png,real,4,200,real,1,0.0,239
+0_real/00335 (12).png,real,5,200,real,1,0.0,197
+0_real/00519 (10).png,real,1,200,real,1,0.0,193
+0_real/00519 (10).png,real,2,200,real,1,0.0,187
+0_real/00519 (10).png,real,3,200,real,1,0.0,230
+0_real/00519 (10).png,real,4,200,real,1,0.0,187
+0_real/00519 (10).png,real,5,200,real,1,0.0,251
+0_real/00519 (19).png,real,1,200,real,1,0.0,188
+0_real/00519 (19).png,real,2,200,real,1,0.0,208
+0_real/00519 (19).png,real,3,200,real,1,0.0,248
+0_real/00519 (19).png,real,4,200,real,1,0.0,181
+0_real/00519 (19).png,real,5,200,real,1,0.0,311
+0_real/00642 (9).png,real,1,200,real,1,0.0,216
+0_real/00642 (9).png,real,2,200,real,1,0.0,220
+0_real/00642 (9).png,real,3,200,real,1,0.0,213
+0_real/00642 (9).png,real,4,200,real,1,0.0,204
+0_real/00642 (9).png,real,5,200,real,1,0.0,228
+0_real/00728 (15).png,real,1,200,real,1,0.0,188
+0_real/00728 (15).png,real,2,200,real,1,0.0,239
+0_real/00728 (15).png,real,3,200,real,1,0.0,170
+0_real/00728 (15).png,real,4,200,real,1,0.0,213
+0_real/00728 (15).png,real,5,200,real,1,0.0,181
+0_real/00728 (17).png,real,1,200,real,1,0.0,211
+0_real/00728 (17).png,real,2,200,real,1,0.0,183
+0_real/00728 (17).png,real,3,200,real,1,0.0,200
+0_real/00728 (17).png,real,4,200,real,1,0.0,204
+0_real/00728 (17).png,real,5,200,real,1,0.0,196
+0_real/00728 (4).png,real,1,200,real,1,0.0,220
+0_real/00728 (4).png,real,2,200,real,1,0.0,179
+0_real/00728 (4).png,real,3,200,real,1,0.0,253
+0_real/00728 (4).png,real,4,200,real,1,0.0,209
+0_real/00728 (4).png,real,5,200,real,1,0.0,264
+0_real/00771 (8).png,real,1,200,real,1,0.0,220
+0_real/00771 (8).png,real,2,200,real,1,0.0,220
+0_real/00771 (8).png,real,3,200,real,1,0.0,245
+0_real/00771 (8).png,real,4,200,real,1,0.0,269
+0_real/00771 (8).png,real,5,200,real,1,0.0,180
+0_real/00834 (7).png,real,1,200,real,1,0.0,277
+0_real/00834 (7).png,real,2,200,real,1,0.0,233
+0_real/00834 (7).png,real,3,200,real,1,0.0,255
+0_real/00834 (7).png,real,4,200,real,1,0.0,214
+0_real/00834 (7).png,real,5,200,real,1,0.0,258
+0_real/00880 (16).png,real,1,200,real,1,0.0,256
+0_real/00880 (16).png,real,2,200,real,1,0.0,195
+0_real/00880 (16).png,real,3,200,real,1,0.0,264
+0_real/00880 (16).png,real,4,200,real,1,0.0,184
+0_real/00880 (16).png,real,5,200,real,1,0.0,286
+0_real/00880 (7).png,real,1,200,real,1,0.0,177
+0_real/00880 (7).png,real,2,200,real,1,0.0,210
+0_real/00880 (7).png,real,3,200,real,1,0.0,190
+0_real/00880 (7).png,real,4,200,real,1,0.0,231
+0_real/00880 (7).png,real,5,200,real,1,0.0,200
+0_real/01167 (9).png,real,1,200,real,1,0.0,207
+0_real/01167 (9).png,real,2,200,real,1,0.0,185
+0_real/01167 (9).png,real,3,200,real,1,0.0,251
+0_real/01167 (9).png,real,4,200,real,1,0.0,182
+0_real/01167 (9).png,real,5,200,real,1,0.0,230
+0_real/01280 (13).png,real,1,200,real,1,0.0,174
+0_real/01280 (13).png,real,2,200,real,1,0.0,232
+0_real/01280 (13).png,real,3,200,real,1,0.0,181
+0_real/01280 (13).png,real,4,200,real,1,0.0,237
+0_real/01280 (13).png,real,5,200,real,1,0.0,186
+0_real/01557 (19).png,real,1,200,real,1,0.0,175
+0_real/01557 (19).png,real,2,200,real,1,0.0,270
+0_real/01557 (19).png,real,3,200,real,1,0.0,174
+0_real/01557 (19).png,real,4,200,real,1,0.0,231
+0_real/01557 (19).png,real,5,200,real,1,0.0,200
+0_real/01557 (2).png,real,1,200,real,1,0.0,176
+0_real/01557 (2).png,real,2,200,real,1,0.0,173
+0_real/01557 (2).png,real,3,200,real,1,0.0,205
+0_real/01557 (2).png,real,4,200,real,1,0.0,180
+0_real/01557 (2).png,real,5,200,real,1,0.0,202
+0_real/01557 (4).png,real,1,200,real,1,0.0,171
+0_real/01557 (4).png,real,2,200,real,1,0.0,243
+0_real/01557 (4).png,real,3,200,real,1,0.0,175
+0_real/01557 (4).png,real,4,200,real,1,0.0,206
+0_real/01557 (4).png,real,5,200,real,1,0.0,197
+0_real/01560 (16).png,real,1,200,real,1,0.0,182
+0_real/01560 (16).png,real,2,200,real,1,0.0,248
+0_real/01560 (16).png,real,3,200,real,1,0.0,201
+0_real/01560 (16).png,real,4,200,real,1,0.0,215
+0_real/01560 (16).png,real,5,200,real,1,0.0,212
+0_real/01560 (7).png,real,1,200,real,1,0.0,221
+0_real/01560 (7).png,real,2,200,real,1,0.0,185
+0_real/01560 (7).png,real,3,200,real,1,0.0,208
+0_real/01560 (7).png,real,4,200,real,1,0.0,187
+0_real/01560 (7).png,real,5,200,real,1,0.0,247
+0_real/01602 (6).png,real,1,200,real,1,0.0,191
+0_real/01602 (6).png,real,2,200,real,1,0.0,200
+0_real/01602 (6).png,real,3,200,real,1,0.0,193
+0_real/01602 (6).png,real,4,200,real,1,0.0,235
+0_real/01602 (6).png,real,5,200,real,1,0.0,177
+0_real/01952 (15).png,real,1,200,real,1,0.0,214
+0_real/01952 (15).png,real,2,200,real,1,0.0,179
+0_real/01952 (15).png,real,3,200,real,1,0.0,248
+0_real/01952 (15).png,real,4,200,real,1,0.0,187
+0_real/01952 (15).png,real,5,200,real,1,0.0,173
+0_real/01952 (17).png,real,1,200,real,1,0.0,235
+0_real/01952 (17).png,real,2,200,real,1,0.0,203
+0_real/01952 (17).png,real,3,200,real,1,0.0,205
+0_real/01952 (17).png,real,4,200,real,1,0.0,188
+0_real/01952 (17).png,real,5,200,real,1,0.0,187
+0_real/02018 (17).png,real,1,200,real,1,0.0,222
+0_real/02018 (17).png,real,2,200,real,1,0.0,226
+0_real/02018 (17).png,real,3,200,real,1,0.0,234
+0_real/02018 (17).png,real,4,200,real,1,0.0,184
+0_real/02018 (17).png,real,5,200,real,1,0.0,240
+0_real/02022 (4).png,real,1,200,real,1,0.0,265
+0_real/02022 (4).png,real,2,200,real,1,0.0,292
+0_real/02022 (4).png,real,3,200,real,1,0.0,283
+0_real/02022 (4).png,real,4,200,real,1,0.0,208
+0_real/02022 (4).png,real,5,200,real,1,0.0,239
+0_real/02135 (10).png,real,1,200,real,1,0.0,175
+0_real/02135 (10).png,real,2,200,real,1,0.0,253
+0_real/02135 (10).png,real,3,200,real,1,0.0,190
+0_real/02135 (10).png,real,4,200,real,1,0.0,217
+0_real/02135 (10).png,real,5,200,real,1,0.0,230
+0_real/02135 (15).png,real,1,200,real,1,0.0,177
+0_real/02135 (15).png,real,2,200,real,1,0.0,196
+0_real/02135 (15).png,real,3,200,real,1,0.0,181
+0_real/02135 (15).png,real,4,200,real,1,0.0,210
+0_real/02135 (15).png,real,5,200,real,1,0.0,190
+0_real/02135 (3).png,real,1,200,real,1,0.0,214
+0_real/02135 (3).png,real,2,200,real,1,0.0,188
+0_real/02135 (3).png,real,3,200,real,1,0.0,224
+0_real/02135 (3).png,real,4,200,real,1,0.0,224
+0_real/02135 (3).png,real,5,200,real,1,0.0,209
+0_real/02313 (11).png,real,1,200,real,1,0.0,177
+0_real/02313 (11).png,real,2,200,real,1,0.0,246
+0_real/02313 (11).png,real,3,200,real,1,0.0,177
+0_real/02313 (11).png,real,4,200,real,1,0.0,190
+0_real/02313 (11).png,real,5,200,real,1,0.0,220
+0_real/02313 (17).png,real,1,200,real,1,0.0,169
+0_real/02313 (17).png,real,2,200,real,1,0.0,236
+0_real/02313 (17).png,real,3,200,real,1,0.0,188
+0_real/02313 (17).png,real,4,200,real,1,0.0,179
+0_real/02313 (17).png,real,5,200,real,1,0.0,287
+0_real/02356 (2).png,real,1,200,real,1,0.0,239
+0_real/02356 (2).png,real,2,200,real,1,0.0,274
+0_real/02356 (2).png,real,3,200,real,1,0.0,184
+0_real/02356 (2).png,real,4,200,real,1,0.0,183
+0_real/02356 (2).png,real,5,200,real,1,0.0,259
+0_real/02356 (6).png,real,1,200,real,1,0.0,186
+0_real/02356 (6).png,real,2,200,real,1,0.0,226
+0_real/02356 (6).png,real,3,200,real,1,0.0,213
+0_real/02356 (6).png,real,4,200,real,1,0.0,177
+0_real/02356 (6).png,real,5,200,real,1,0.0,250
+0_real/02390 (14).png,real,1,200,real,1,0.0,210
+0_real/02390 (14).png,real,2,200,real,1,0.0,248
+0_real/02390 (14).png,real,3,200,real,1,0.0,177
+0_real/02390 (14).png,real,4,200,real,1,0.0,318
+0_real/02390 (14).png,real,5,200,real,1,0.0,222
+0_real/02423 (14).png,real,1,200,real,1,0.0,191
+0_real/02423 (14).png,real,2,200,real,1,0.0,211
+0_real/02423 (14).png,real,3,200,real,1,0.0,199
+0_real/02423 (14).png,real,4,200,real,1,0.0,191
+0_real/02423 (14).png,real,5,200,real,1,0.0,203
+0_real/02423 (19).png,real,1,200,real,1,0.0,180
+0_real/02423 (19).png,real,2,200,real,1,0.0,248
+0_real/02423 (19).png,real,3,200,real,1,0.0,186
+0_real/02423 (19).png,real,4,200,real,1,0.0,227
+0_real/02423 (19).png,real,5,200,real,1,0.0,169
+0_real/02423 (5).png,real,1,200,real,1,0.0,204
+0_real/02423 (5).png,real,2,200,real,1,0.0,168
+0_real/02423 (5).png,real,3,200,real,1,0.0,182
+0_real/02423 (5).png,real,4,200,real,1,0.0,209
+0_real/02423 (5).png,real,5,200,real,1,0.0,184
+0_real/02487 (14).png,real,1,200,real,1,0.0,219
+0_real/02487 (14).png,real,2,200,real,1,0.0,185
+0_real/02487 (14).png,real,3,200,real,1,0.0,234
+0_real/02487 (14).png,real,4,200,real,1,0.0,203
+0_real/02487 (14).png,real,5,200,real,1,0.0,215
+0_real/02617 (2).png,real,1,200,real,1,0.0,174
+0_real/02617 (2).png,real,2,200,real,1,0.0,249
+0_real/02617 (2).png,real,3,200,real,1,0.0,210
+0_real/02617 (2).png,real,4,200,real,1,0.0,223
+0_real/02617 (2).png,real,5,200,real,1,0.0,192
+0_real/02617.png,real,1,200,real,1,0.0,245
+0_real/02617.png,real,2,200,real,1,0.0,187
+0_real/02617.png,real,3,200,real,1,0.0,178
+0_real/02617.png,real,4,200,real,1,0.0,233
+0_real/02617.png,real,5,200,real,1,0.0,175
+0_real/02909 (11).png,real,1,200,real,1,0.0,174
+0_real/02909 (11).png,real,2,200,real,1,0.0,223
+0_real/02909 (11).png,real,3,200,real,1,0.0,206
+0_real/02909 (11).png,real,4,200,real,1,0.0,204
+0_real/02909 (11).png,real,5,200,real,1,0.0,216
+0_real/02909 (15).png,real,1,200,real,1,0.0,210
+0_real/02909 (15).png,real,2,200,real,1,0.0,240
+0_real/02909 (15).png,real,3,200,real,1,0.0,172
+0_real/02909 (15).png,real,4,200,real,1,0.0,289
+0_real/02909 (15).png,real,5,200,real,1,0.0,183
+0_real/02909 (18).png,real,1,200,real,1,0.0,206
+0_real/02909 (18).png,real,2,200,real,1,0.0,175
+0_real/02909 (18).png,real,3,200,real,1,0.0,260
+0_real/02909 (18).png,real,4,200,real,1,0.0,202
+0_real/02909 (18).png,real,5,200,real,1,0.0,176
+0_real/02976 (11).png,real,1,200,real,1,0.0,198
+0_real/02976 (11).png,real,2,200,real,1,0.0,174
+0_real/02976 (11).png,real,3,200,real,1,0.0,191
+0_real/02976 (11).png,real,4,200,real,1,0.0,179
+0_real/02976 (11).png,real,5,200,real,1,0.0,261
+0_real/03032 (13).png,real,1,200,real,1,0.0,183
+0_real/03032 (13).png,real,2,200,real,1,0.0,231
+0_real/03032 (13).png,real,3,200,real,1,0.0,189
+0_real/03032 (13).png,real,4,200,real,1,0.0,173
+0_real/03032 (13).png,real,5,200,real,1,0.0,212
+0_real/03032 (4).png,real,1,200,real,1,0.0,202
+0_real/03032 (4).png,real,2,200,real,1,0.0,227
+0_real/03032 (4).png,real,3,200,real,1,0.0,269
+0_real/03032 (4).png,real,4,200,real,1,0.0,177
+0_real/03032 (4).png,real,5,200,real,1,0.0,240
+0_real/03127 (13).png,real,1,200,real,1,0.0,193
+0_real/03127 (13).png,real,2,200,real,1,0.0,192
+0_real/03127 (13).png,real,3,200,real,1,0.0,207
+0_real/03127 (13).png,real,4,200,real,1,0.0,191
+0_real/03127 (13).png,real,5,200,real,1,0.0,171
+0_real/03199 (13).png,real,1,200,real,1,0.0,206
+0_real/03199 (13).png,real,2,200,real,1,0.0,177
+0_real/03199 (13).png,real,3,200,real,1,0.0,260
+0_real/03199 (13).png,real,4,200,real,1,0.0,206
+0_real/03199 (13).png,real,5,200,real,1,0.0,293
+0_real/03199 (8).png,real,1,200,real,1,0.0,219
+0_real/03199 (8).png,real,2,200,real,1,0.0,182
+0_real/03199 (8).png,real,3,200,real,1,0.0,279
+0_real/03199 (8).png,real,4,200,real,1,0.0,183
+0_real/03199 (8).png,real,5,200,real,1,0.0,227
+0_real/03294 (11).png,real,1,200,real,1,0.0,244
+0_real/03294 (11).png,real,2,200,real,1,0.0,215
+0_real/03294 (11).png,real,3,200,real,1,0.0,217
+0_real/03294 (11).png,real,4,200,real,1,0.0,211
+0_real/03294 (11).png,real,5,200,real,1,0.0,225
+0_real/03505 (13).png,real,1,200,real,1,0.0,218
+0_real/03505 (13).png,real,2,200,real,1,0.0,224
+0_real/03505 (13).png,real,3,200,real,1,0.0,186
+0_real/03505 (13).png,real,4,200,real,1,0.0,207
+0_real/03505 (13).png,real,5,200,real,1,0.0,210
+0_real/03505 (14).png,real,1,200,real,1,0.0,234
+0_real/03505 (14).png,real,2,200,real,1,0.0,190
+0_real/03505 (14).png,real,3,200,real,1,0.0,202
+0_real/03505 (14).png,real,4,200,real,1,0.0,180
+0_real/03505 (14).png,real,5,200,real,1,0.0,266
+0_real/03505 (16).png,real,1,200,real,1,0.0,181
+0_real/03505 (16).png,real,2,200,real,1,0.0,236
+0_real/03505 (16).png,real,3,200,real,1,0.0,171
+0_real/03505 (16).png,real,4,200,real,1,0.0,205
+0_real/03505 (16).png,real,5,200,real,1,0.0,229
+0_real/03505 (3).png,real,1,200,real,1,0.0,238
+0_real/03505 (3).png,real,2,200,real,1,0.0,193
+0_real/03505 (3).png,real,3,200,real,1,0.0,244
+0_real/03505 (3).png,real,4,200,real,1,0.0,180
+0_real/03505 (3).png,real,5,200,real,1,0.0,193
+0_real/03505 (6).png,real,1,200,real,1,0.0,177
+0_real/03505 (6).png,real,2,200,real,1,0.0,299
+0_real/03505 (6).png,real,3,200,real,1,0.0,172
+0_real/03505 (6).png,real,4,200,real,1,0.0,269
+0_real/03505 (6).png,real,5,200,real,1,0.0,218
+0_real/03527 (16).png,real,1,200,real,1,0.0,187
+0_real/03527 (16).png,real,2,200,real,1,0.0,230
+0_real/03527 (16).png,real,3,200,real,1,0.0,184
+0_real/03527 (16).png,real,4,200,real,1,0.0,176
+0_real/03527 (16).png,real,5,200,real,1,0.0,276
+0_real/03527 (18).png,real,1,200,real,1,0.0,197
+0_real/03527 (18).png,real,2,200,real,1,0.0,187
+0_real/03527 (18).png,real,3,200,real,1,0.0,226
+0_real/03527 (18).png,real,4,200,real,1,0.0,177
+0_real/03527 (18).png,real,5,200,real,1,0.0,228
+0_real/03527 (2).png,real,1,200,real,1,0.0,228
+0_real/03527 (2).png,real,2,200,real,1,0.0,207
+0_real/03527 (2).png,real,3,200,real,1,0.0,194
+0_real/03527 (2).png,real,4,200,real,1,0.0,256
+0_real/03527 (2).png,real,5,200,real,1,0.0,201
+0_real/03527 (20).png,real,1,200,real,1,0.0,235
+0_real/03527 (20).png,real,2,200,real,1,0.0,194
+0_real/03527 (20).png,real,3,200,real,1,0.0,271
+0_real/03527 (20).png,real,4,200,real,1,0.0,189
+0_real/03527 (20).png,real,5,200,real,1,0.0,269
+0_real/03527.png,real,1,200,real,1,0.0,201
+0_real/03527.png,real,2,200,real,1,0.0,239
+0_real/03527.png,real,3,200,real,1,0.0,195
+0_real/03527.png,real,4,200,real,1,0.0,248
+0_real/03527.png,real,5,200,real,1,0.0,192
+0_real/03634 (6).png,real,1,200,real,1,0.0,246
+0_real/03634 (6).png,real,2,200,real,1,0.0,208
+0_real/03634 (6).png,real,3,200,real,1,0.0,245
+0_real/03634 (6).png,real,4,200,real,1,0.0,239
+0_real/03634 (6).png,real,5,200,real,1,0.0,222
+0_real/03634 (9).png,real,1,200,real,1,0.0,353
+0_real/03634 (9).png,real,2,200,real,1,0.0,252
+0_real/03634 (9).png,real,3,200,real,1,0.0,200
+0_real/03634 (9).png,real,4,200,real,1,0.0,236
+0_real/03634 (9).png,real,5,200,real,1,0.0,198
+0_real/03655 (3).png,real,1,200,real,1,0.0,215
+0_real/03655 (3).png,real,2,200,real,1,0.0,221
+0_real/03655 (3).png,real,3,200,real,1,0.0,216
+0_real/03655 (3).png,real,4,200,real,1,0.0,247
+0_real/03655 (3).png,real,5,200,real,1,0.0,307
+0_real/03679 (14).png,real,1,200,real,1,0.0,235
+0_real/03679 (14).png,real,2,200,real,1,0.0,228
+0_real/03679 (14).png,real,3,200,real,1,0.0,236
+0_real/03679 (14).png,real,4,200,real,1,0.0,223
+0_real/03679 (14).png,real,5,200,real,1,0.0,212
+0_real/03679 (17).png,real,1,200,real,1,0.0,210
+0_real/03679 (17).png,real,2,200,real,1,0.0,172
+0_real/03679 (17).png,real,3,200,real,1,0.0,238
+0_real/03679 (17).png,real,4,200,real,1,0.0,177
+0_real/03679 (17).png,real,5,200,real,1,0.0,236
+0_real/03679.png,real,1,200,real,1,0.0,204
+0_real/03679.png,real,2,200,real,1,0.0,184
+0_real/03679.png,real,3,200,real,1,0.0,244
+0_real/03679.png,real,4,200,real,1,0.0,258
+0_real/03679.png,real,5,200,real,1,0.0,252
+0_real/03711 (14).png,real,1,200,real,1,0.0,258
+0_real/03711 (14).png,real,2,200,real,1,0.0,220
+0_real/03711 (14).png,real,3,200,real,1,0.0,284
+0_real/03711 (14).png,real,4,200,real,1,0.0,243
+0_real/03711 (14).png,real,5,200,real,1,0.0,210
+0_real/03711 (19).png,real,1,200,real,1,0.0,236
+0_real/03711 (19).png,real,2,200,real,1,0.0,230
+0_real/03711 (19).png,real,3,200,real,1,0.0,244
+0_real/03711 (19).png,real,4,200,real,1,0.0,205
+0_real/03711 (19).png,real,5,200,real,1,0.0,238
+0_real/03793 (13).png,real,1,200,real,1,0.0,255
+0_real/03793 (13).png,real,2,200,real,1,0.0,234
+0_real/03793 (13).png,real,3,200,real,1,0.0,207
+0_real/03793 (13).png,real,4,200,real,1,0.0,196
+0_real/03793 (13).png,real,5,200,real,1,0.0,269
+0_real/03793 (16).png,real,1,200,real,1,0.0,221
+0_real/03793 (16).png,real,2,200,real,1,0.0,266
+0_real/03793 (16).png,real,3,200,real,1,0.0,265
+0_real/03793 (16).png,real,4,200,real,1,0.0,245
+0_real/03793 (16).png,real,5,200,real,1,0.0,222
+0_real/03793 (4).png,real,1,200,real,1,0.0,263
+0_real/03793 (4).png,real,2,200,real,1,0.0,230
+0_real/03793 (4).png,real,3,200,real,1,0.0,244
+0_real/03793 (4).png,real,4,200,real,1,0.0,240
+0_real/03793 (4).png,real,5,200,real,1,0.0,241
+0_real/03986 (11).png,real,1,200,real,1,0.0,180
+0_real/03986 (11).png,real,2,200,real,1,0.0,226
+0_real/03986 (11).png,real,3,200,real,1,0.0,224
+0_real/03986 (11).png,real,4,200,real,1,0.0,197
+0_real/03986 (11).png,real,5,200,real,1,0.0,218
+0_real/04223 (11).png,real,1,200,real,1,0.0,193
+0_real/04223 (11).png,real,2,200,real,1,0.0,239
+0_real/04223 (11).png,real,3,200,real,1,0.0,211
+0_real/04223 (11).png,real,4,200,real,1,0.0,221
+0_real/04223 (11).png,real,5,200,real,1,0.0,166
+0_real/04223 (5).png,real,1,200,real,1,0.0,168
+0_real/04223 (5).png,real,2,200,real,1,0.0,201
+0_real/04223 (5).png,real,3,200,real,1,0.0,212
+0_real/04223 (5).png,real,4,200,real,1,0.0,240
+0_real/04223 (5).png,real,5,200,real,1,0.0,182
+0_real/04426 (3).png,real,1,200,real,1,0.0,180
+0_real/04426 (3).png,real,2,200,real,1,0.0,238
+0_real/04426 (3).png,real,3,200,real,1,0.0,198
+0_real/04426 (3).png,real,4,200,real,1,0.0,203
+0_real/04426 (3).png,real,5,200,real,1,0.0,250
+0_real/04576 (11).png,real,1,200,real,1,0.0,230
+0_real/04576 (11).png,real,2,200,real,1,0.0,286
+0_real/04576 (11).png,real,3,200,real,1,0.0,194
+0_real/04576 (11).png,real,4,200,real,1,0.0,256
+0_real/04576 (11).png,real,5,200,real,1,0.0,185
+0_real/04576 (13).png,real,1,200,real,1,0.0,255
+0_real/04576 (13).png,real,2,200,real,1,0.0,204
+0_real/04576 (13).png,real,3,200,real,1,0.0,201
+0_real/04576 (13).png,real,4,200,real,1,0.0,166
+0_real/04576 (13).png,real,5,200,real,1,0.0,228
+0_real/04576 (16).png,real,1,200,real,1,0.0,177
+0_real/04576 (16).png,real,2,200,real,1,0.0,176
+0_real/04576 (16).png,real,3,200,real,1,0.0,200
+0_real/04576 (16).png,real,4,200,real,1,0.0,187
+0_real/04576 (16).png,real,5,200,real,1,0.0,197
+0_real/04656 (9).png,real,1,200,real,1,0.0,168
+0_real/04656 (9).png,real,2,200,real,1,0.0,275
+0_real/04656 (9).png,real,3,200,real,1,0.0,184
+0_real/04656 (9).png,real,4,200,real,1,0.0,170
+0_real/04656 (9).png,real,5,200,real,1,0.0,225
+0_real/05148 (5).png,real,1,200,real,1,0.0,181
+0_real/05148 (5).png,real,2,200,real,1,0.0,169
+0_real/05148 (5).png,real,3,200,real,1,0.0,268
+0_real/05148 (5).png,real,4,200,real,1,0.0,178
+0_real/05148 (5).png,real,5,200,real,1,0.0,167
+0_real/05450 (3).png,real,1,200,real,1,0.0,237
+0_real/05450 (3).png,real,2,200,real,1,0.0,178
+0_real/05450 (3).png,real,3,200,real,1,0.0,169
+0_real/05450 (3).png,real,4,200,real,1,0.0,230
+0_real/05450 (3).png,real,5,200,real,1,0.0,178
+0_real/05560 (3).png,real,1,200,real,1,0.0,236
+0_real/05560 (3).png,real,2,200,real,1,0.0,192
+0_real/05560 (3).png,real,3,200,real,1,0.0,167
+0_real/05560 (3).png,real,4,200,real,1,0.0,264
+0_real/05560 (3).png,real,5,200,real,1,0.0,189
+0_real/05687 (2).png,real,1,200,real,1,0.0,187
+0_real/05687 (2).png,real,2,200,real,1,0.0,188
+0_real/05687 (2).png,real,3,200,real,1,0.0,203
+0_real/05687 (2).png,real,4,200,real,1,0.0,174
+0_real/05687 (2).png,real,5,200,real,1,0.0,203
+0_real/05888 (3).png,real,1,200,real,1,0.0,190
+0_real/05888 (3).png,real,2,200,real,1,0.0,178
+0_real/05888 (3).png,real,3,200,real,1,0.0,229
+0_real/05888 (3).png,real,4,200,real,1,0.0,190
+0_real/05888 (3).png,real,5,200,real,1,0.0,176
+0_real/05888 (4).png,real,1,200,real,1,0.0,262
+0_real/05888 (4).png,real,2,200,real,1,0.0,202
+0_real/05888 (4).png,real,3,200,real,1,0.0,174
+0_real/05888 (4).png,real,4,200,real,1,0.0,330
+0_real/05888 (4).png,real,5,200,real,1,0.0,240
+0_real/05961.png,real,1,200,real,1,0.0,215
+0_real/05961.png,real,2,200,real,1,0.0,210
+0_real/05961.png,real,3,200,real,1,0.0,209
+0_real/05961.png,real,4,200,real,1,0.0,240
+0_real/05961.png,real,5,200,real,1,0.0,200
+0_real/05970 (3).png,real,1,200,real,1,0.0,216
+0_real/05970 (3).png,real,2,200,real,1,0.0,211
+0_real/05970 (3).png,real,3,200,real,1,0.0,223
+0_real/05970 (3).png,real,4,200,real,1,0.0,211
+0_real/05970 (3).png,real,5,200,real,1,0.0,204
+0_real/06142 (3).png,real,1,200,real,1,0.0,232
+0_real/06142 (3).png,real,2,200,real,1,0.0,191
+0_real/06142 (3).png,real,3,200,real,1,0.0,238
+0_real/06142 (3).png,real,4,200,real,1,0.0,221
+0_real/06142 (3).png,real,5,200,real,1,0.0,247
+0_real/06720 (4).png,real,1,200,real,1,0.0,201
+0_real/06720 (4).png,real,2,200,real,1,0.0,240
+0_real/06720 (4).png,real,3,200,real,1,0.0,192
+0_real/06720 (4).png,real,4,200,real,1,0.0,181
+0_real/06720 (4).png,real,5,200,real,1,0.0,263
+0_real/07013 (3).png,real,1,200,real,1,0.0,191
+0_real/07013 (3).png,real,2,200,real,1,0.0,199
+0_real/07013 (3).png,real,3,200,real,1,0.0,198
+0_real/07013 (3).png,real,4,200,real,1,0.0,189
+0_real/07013 (3).png,real,5,200,real,1,0.0,268
+0_real/07091 (2).png,real,1,200,real,1,0.0,186
+0_real/07091 (2).png,real,2,200,real,1,0.0,270
+0_real/07091 (2).png,real,3,200,real,1,0.0,247
+0_real/07091 (2).png,real,4,200,real,1,0.0,178
+0_real/07091 (2).png,real,5,200,real,1,0.0,227
+0_real/07091.png,real,1,200,real,1,0.0,178
+0_real/07091.png,real,2,200,real,1,0.0,254
+0_real/07091.png,real,3,200,real,1,0.0,226
+0_real/07091.png,real,4,200,real,1,0.0,206
+0_real/07091.png,real,5,200,real,1,0.0,180
+0_real/08556.png,real,1,200,real,1,0.0,225
+0_real/08556.png,real,2,200,real,1,0.0,171
+0_real/08556.png,real,3,200,real,1,0.0,237
+0_real/08556.png,real,4,200,real,1,0.0,200
+0_real/08556.png,real,5,200,real,1,0.0,171
+0_real/08995.png,real,1,200,real,1,0.0,251
+0_real/08995.png,real,2,200,real,1,0.0,188
+0_real/08995.png,real,3,200,real,1,0.0,178
+0_real/08995.png,real,4,200,real,1,0.0,216
+0_real/08995.png,real,5,200,real,1,0.0,193
+0_real/09016 (2).png,real,1,200,real,1,0.0,205
+0_real/09016 (2).png,real,2,200,real,1,0.0,183
+0_real/09016 (2).png,real,3,200,real,1,0.0,255
+0_real/09016 (2).png,real,4,200,real,1,0.0,252
+0_real/09016 (2).png,real,5,200,real,1,0.0,208
+0_real/09016.png,real,1,200,real,1,0.0,205
+0_real/09016.png,real,2,200,real,1,0.0,191
+0_real/09016.png,real,3,200,real,1,0.0,232
+0_real/09016.png,real,4,200,real,1,0.0,216
+0_real/09016.png,real,5,200,real,1,0.0,232
+1_fake/03032 (3).png,fake,1,200,real,1,0.0,191
+1_fake/03032 (3).png,fake,2,200,real,1,0.0,199
+1_fake/03032 (3).png,fake,3,200,real,1,0.0,241
+1_fake/03032 (3).png,fake,4,200,real,1,0.0,227
+1_fake/03032 (3).png,fake,5,200,real,1,0.0,170
+1_fake/03032 (7).png,fake,1,200,real,1,0.0,223
+1_fake/03032 (7).png,fake,2,200,real,1,0.0,180
+1_fake/03032 (7).png,fake,3,200,real,1,0.0,174
+1_fake/03032 (7).png,fake,4,200,real,1,0.0,250
+1_fake/03032 (7).png,fake,5,200,real,1,0.0,208
+1_fake/03032 (9).png,fake,1,200,real,1,0.0,202
+1_fake/03032 (9).png,fake,2,200,real,1,0.0,172
+1_fake/03032 (9).png,fake,3,200,real,1,0.0,213
+1_fake/03032 (9).png,fake,4,200,real,1,0.0,185
+1_fake/03032 (9).png,fake,5,200,real,1,0.0,197
+1_fake/03199 (15).png,fake,1,200,fake,1,1.0,197
+1_fake/03199 (15).png,fake,2,200,fake,1,1.0,214
+1_fake/03199 (15).png,fake,3,200,fake,1,1.0,198
+1_fake/03199 (15).png,fake,4,200,fake,1,1.0,175
+1_fake/03199 (15).png,fake,5,200,fake,1,1.0,235
+1_fake/03199 (3).png,fake,1,200,real,1,0.0,202
+1_fake/03199 (3).png,fake,2,200,real,1,0.0,220
+1_fake/03199 (3).png,fake,3,200,real,1,0.0,171
+1_fake/03199 (3).png,fake,4,200,real,1,0.0,240
+1_fake/03199 (3).png,fake,5,200,real,1,0.0,177
+1_fake/03294 (12).png,fake,1,200,real,1,0.0,268
+1_fake/03294 (12).png,fake,2,200,real,1,0.0,176
+1_fake/03294 (12).png,fake,3,200,real,1,0.0,238
+1_fake/03294 (12).png,fake,4,200,real,1,0.0,184
+1_fake/03294 (12).png,fake,5,200,real,1,0.0,182
+1_fake/03294 (4).png,fake,1,200,real,1,0.0,233
+1_fake/03294 (4).png,fake,2,200,fake,1,1.0,185
+1_fake/03294 (4).png,fake,3,200,real,1,0.0,254
+1_fake/03294 (4).png,fake,4,200,real,1,0.0,190
+1_fake/03294 (4).png,fake,5,200,real,1,0.0,191
+1_fake/03294 (6).png,fake,1,200,fake,1,1.0,177
+1_fake/03294 (6).png,fake,2,200,real,1,0.0,276
+1_fake/03294 (6).png,fake,3,200,fake,1,1.0,244
+1_fake/03294 (6).png,fake,4,200,fake,1,1.0,200
+1_fake/03294 (6).png,fake,5,200,real,1,0.0,175
+1_fake/03505 (18).png,fake,1,200,real,1,0.0,215
+1_fake/03505 (18).png,fake,2,200,real,1,0.0,195
+1_fake/03505 (18).png,fake,3,200,real,1,0.0,281
+1_fake/03505 (18).png,fake,4,200,real,1,0.0,182
+1_fake/03505 (18).png,fake,5,200,real,1,0.0,233
+1_fake/03505 (7).png,fake,1,200,fake,1,1.0,168
+1_fake/03505 (7).png,fake,2,200,real,1,0.0,243
+1_fake/03505 (7).png,fake,3,200,fake,1,1.0,176
+1_fake/03505 (7).png,fake,4,200,fake,1,1.0,181
+1_fake/03505 (7).png,fake,5,200,real,1,0.0,245
+1_fake/03634 (11).png,fake,1,200,real,1,0.0,178
+1_fake/03634 (11).png,fake,2,200,real,1,0.0,238
+1_fake/03634 (11).png,fake,3,200,real,1,0.0,189
+1_fake/03634 (11).png,fake,4,200,real,1,0.0,217
+1_fake/03634 (11).png,fake,5,200,real,1,0.0,193
+1_fake/03634 (18).png,fake,1,200,real,1,0.0,249
+1_fake/03634 (18).png,fake,2,200,real,1,0.0,173
+1_fake/03634 (18).png,fake,3,200,real,1,0.0,241
+1_fake/03634 (18).png,fake,4,200,real,1,0.0,202
+1_fake/03634 (18).png,fake,5,200,real,1,0.0,242
+1_fake/03634 (2).png,fake,1,200,real,1,0.0,171
+1_fake/03634 (2).png,fake,2,200,real,1,0.0,179
+1_fake/03634 (2).png,fake,3,200,real,1,0.0,234
+1_fake/03634 (2).png,fake,4,200,real,1,0.0,196
+1_fake/03634 (2).png,fake,5,200,fake,1,1.0,179
+1_fake/03634 (6).png,fake,1,200,fake,1,1.0,232
+1_fake/03634 (6).png,fake,2,200,fake,1,1.0,187
+1_fake/03634 (6).png,fake,3,200,fake,1,1.0,178
+1_fake/03634 (6).png,fake,4,200,fake,1,1.0,259
+1_fake/03634 (6).png,fake,5,200,fake,1,1.0,168
+1_fake/03655 (5).png,fake,1,200,real,1,0.0,253
+1_fake/03655 (5).png,fake,2,200,real,1,0.0,179
+1_fake/03655 (5).png,fake,3,200,real,1,0.0,233
+1_fake/03655 (5).png,fake,4,200,real,1,0.0,186
+1_fake/03655 (5).png,fake,5,200,real,1,0.0,183
+1_fake/33_adm_153.png,fake,1,200,real,1,0.0,268
+1_fake/33_adm_153.png,fake,2,200,real,1,0.0,173
+1_fake/33_adm_153.png,fake,3,200,real,1,0.0,196
+1_fake/33_adm_153.png,fake,4,200,real,1,0.0,175
+1_fake/33_adm_153.png,fake,5,200,real,1,0.0,271
+1_fake/40_adm_153.png,fake,1,200,fake,1,1.0,181
+1_fake/40_adm_153.png,fake,2,200,fake,1,1.0,240
+1_fake/40_adm_153.png,fake,3,200,fake,1,1.0,182
+1_fake/40_adm_153.png,fake,4,200,fake,1,1.0,266
+1_fake/40_adm_153.png,fake,5,200,fake,1,1.0,183
+1_fake/473_adm_153.png,fake,1,200,real,1,0.0,200
+1_fake/473_adm_153.png,fake,2,200,fake,1,1.0,206
+1_fake/473_adm_153.png,fake,3,200,fake,1,1.0,228
+1_fake/473_adm_153.png,fake,4,200,fake,1,1.0,170
+1_fake/473_adm_153.png,fake,5,200,real,1,0.0,231
+1_fake/62_adm_153.png,fake,1,200,real,1,0.0,214
+1_fake/62_adm_153.png,fake,2,200,fake,1,1.0,192
+1_fake/62_adm_153.png,fake,3,200,fake,1,1.0,214
+1_fake/62_adm_153.png,fake,4,200,fake,1,1.0,169
+1_fake/62_adm_153.png,fake,5,200,fake,1,1.0,238
+1_fake/641_adm_153.png,fake,1,200,real,1,0.0,193
+1_fake/641_adm_153.png,fake,2,200,real,1,0.0,180
+1_fake/641_adm_153.png,fake,3,200,real,1,0.0,186
+1_fake/641_adm_153.png,fake,4,200,real,1,0.0,219
+1_fake/641_adm_153.png,fake,5,200,real,1,0.0,185
+1_fake/6_adm_153.png,fake,1,200,real,1,0.0,248
+1_fake/6_adm_153.png,fake,2,200,real,1,0.0,205
+1_fake/6_adm_153.png,fake,3,200,real,1,0.0,192
+1_fake/6_adm_153.png,fake,4,200,real,1,0.0,237
+1_fake/6_adm_153.png,fake,5,200,real,1,0.0,172
+1_fake/70_adm_153.png,fake,1,200,fake,1,1.0,199
+1_fake/70_adm_153.png,fake,2,200,fake,1,1.0,205
+1_fake/70_adm_153.png,fake,3,200,fake,1,1.0,223
+1_fake/70_adm_153.png,fake,4,200,fake,1,1.0,234
+1_fake/70_adm_153.png,fake,5,200,fake,1,1.0,194
+1_fake/72_adm_153.png,fake,1,200,real,1,0.0,168
+1_fake/72_adm_153.png,fake,2,200,real,1,0.0,197
+1_fake/72_adm_153.png,fake,3,200,real,1,0.0,174
+1_fake/72_adm_153.png,fake,4,200,real,1,0.0,211
+1_fake/72_adm_153.png,fake,5,200,real,1,0.0,216
+1_fake/791_sdv5_00195.png,fake,1,200,fake,1,1.0,251
+1_fake/791_sdv5_00195.png,fake,2,200,fake,1,1.0,212
+1_fake/791_sdv5_00195.png,fake,3,200,fake,1,1.0,243
+1_fake/791_sdv5_00195.png,fake,4,200,fake,1,1.0,250
+1_fake/791_sdv5_00195.png,fake,5,200,fake,1,1.0,199
+1_fake/795_sdv5_00100.png,fake,1,200,fake,1,1.0,299
+1_fake/795_sdv5_00100.png,fake,2,200,fake,1,1.0,246
+1_fake/795_sdv5_00100.png,fake,3,200,fake,1,1.0,201
+1_fake/795_sdv5_00100.png,fake,4,200,fake,1,1.0,258
+1_fake/795_sdv5_00100.png,fake,5,200,fake,1,1.0,183
+1_fake/799_sdv5_00039.png,fake,1,200,fake,1,1.0,244
+1_fake/799_sdv5_00039.png,fake,2,200,fake,1,1.0,176
+1_fake/799_sdv5_00039.png,fake,3,200,fake,1,1.0,262
+1_fake/799_sdv5_00039.png,fake,4,200,fake,1,1.0,218
+1_fake/799_sdv5_00039.png,fake,5,200,fake,1,1.0,271
+1_fake/800_sdv5_00100.png,fake,1,200,fake,1,1.0,204
+1_fake/800_sdv5_00100.png,fake,2,200,fake,1,1.0,203
+1_fake/800_sdv5_00100.png,fake,3,200,fake,1,1.0,292
+1_fake/800_sdv5_00100.png,fake,4,200,fake,1,1.0,209
+1_fake/800_sdv5_00100.png,fake,5,200,fake,1,1.0,230
+1_fake/800_sdv5_00195.png,fake,1,200,fake,1,1.0,179
+1_fake/800_sdv5_00195.png,fake,2,200,fake,1,1.0,187
+1_fake/800_sdv5_00195.png,fake,3,200,fake,1,1.0,269
+1_fake/800_sdv5_00195.png,fake,4,200,fake,1,1.0,207
+1_fake/800_sdv5_00195.png,fake,5,200,fake,1,1.0,178
+1_fake/804_sdv5_00039.png,fake,1,200,fake,1,1.0,294
+1_fake/804_sdv5_00039.png,fake,2,200,fake,1,1.0,233
+1_fake/804_sdv5_00039.png,fake,3,200,fake,1,1.0,234
+1_fake/804_sdv5_00039.png,fake,4,200,fake,1,1.0,184
+1_fake/804_sdv5_00039.png,fake,5,200,fake,1,1.0,320
+1_fake/809_sdv5_00100.png,fake,1,200,fake,1,1.0,187
+1_fake/809_sdv5_00100.png,fake,2,200,fake,1,1.0,285
+1_fake/809_sdv5_00100.png,fake,3,200,fake,1,1.0,221
+1_fake/809_sdv5_00100.png,fake,4,200,fake,1,1.0,226
+1_fake/809_sdv5_00100.png,fake,5,200,fake,1,1.0,175
+1_fake/810_sdv5_00135.png,fake,1,200,fake,1,1.0,249
+1_fake/810_sdv5_00135.png,fake,2,200,fake,1,1.0,196
+1_fake/810_sdv5_00135.png,fake,3,200,fake,1,1.0,176
+1_fake/810_sdv5_00135.png,fake,4,200,fake,1,1.0,233
+1_fake/810_sdv5_00135.png,fake,5,200,fake,1,1.0,198
+1_fake/811_sdv5_00195.png,fake,1,200,fake,1,1.0,299
+1_fake/811_sdv5_00195.png,fake,2,200,fake,1,1.0,208
+1_fake/811_sdv5_00195.png,fake,3,200,fake,1,1.0,252
+1_fake/811_sdv5_00195.png,fake,4,200,fake,1,1.0,217
+1_fake/811_sdv5_00195.png,fake,5,200,fake,1,1.0,266
+1_fake/813_sdv5_00135.png,fake,1,200,fake,1,1.0,246
+1_fake/813_sdv5_00135.png,fake,2,200,fake,1,1.0,194
+1_fake/813_sdv5_00135.png,fake,3,200,fake,1,1.0,260
+1_fake/813_sdv5_00135.png,fake,4,200,fake,1,1.0,184
+1_fake/813_sdv5_00135.png,fake,5,200,fake,1,1.0,274
+1_fake/815_sdv5_00039.png,fake,1,200,fake,1,1.0,246
+1_fake/815_sdv5_00039.png,fake,2,200,fake,1,1.0,181
+1_fake/815_sdv5_00039.png,fake,3,200,fake,1,1.0,260
+1_fake/815_sdv5_00039.png,fake,4,200,fake,1,1.0,181
+1_fake/815_sdv5_00039.png,fake,5,200,fake,1,1.0,282
+1_fake/816_sdv5_00135.png,fake,1,200,real,1,0.0,206
+1_fake/816_sdv5_00135.png,fake,2,200,fake,1,1.0,174
+1_fake/816_sdv5_00135.png,fake,3,200,real,1,0.0,255
+1_fake/816_sdv5_00135.png,fake,4,200,real,1,0.0,198
+1_fake/816_sdv5_00135.png,fake,5,200,real,1,0.0,173
+1_fake/821_sdv5_00135.png,fake,1,200,fake,1,1.0,268
+1_fake/821_sdv5_00135.png,fake,2,200,fake,1,1.0,214
+1_fake/821_sdv5_00135.png,fake,3,200,fake,1,1.0,228
+1_fake/821_sdv5_00135.png,fake,4,200,fake,1,1.0,182
+1_fake/821_sdv5_00135.png,fake,5,200,fake,1,1.0,263
+1_fake/822_sdv5_00135.png,fake,1,200,fake,1,1.0,208
+1_fake/822_sdv5_00135.png,fake,2,200,fake,1,1.0,240
+1_fake/822_sdv5_00135.png,fake,3,200,fake,1,1.0,200
+1_fake/822_sdv5_00135.png,fake,4,200,fake,1,1.0,273
+1_fake/822_sdv5_00135.png,fake,5,200,fake,1,1.0,196
+1_fake/824_sdv5_00135.png,fake,1,200,fake,1,1.0,224
+1_fake/824_sdv5_00135.png,fake,2,200,fake,1,1.0,178
+1_fake/824_sdv5_00135.png,fake,3,200,fake,1,1.0,276
+1_fake/824_sdv5_00135.png,fake,4,200,fake,1,1.0,202
+1_fake/824_sdv5_00135.png,fake,5,200,fake,1,1.0,193
+1_fake/829_sdv5_00039.png,fake,1,200,fake,1,1.0,177
+1_fake/829_sdv5_00039.png,fake,2,200,fake,1,1.0,273
+1_fake/829_sdv5_00039.png,fake,3,200,fake,1,1.0,186
+1_fake/829_sdv5_00039.png,fake,4,200,fake,1,1.0,290
+1_fake/829_sdv5_00039.png,fake,5,200,fake,1,1.0,194
+1_fake/830_sdv5_00039.png,fake,1,200,fake,1,1.0,312
+1_fake/830_sdv5_00039.png,fake,2,200,fake,1,1.0,182
+1_fake/830_sdv5_00039.png,fake,3,200,fake,1,1.0,334
+1_fake/830_sdv5_00039.png,fake,4,200,fake,1,1.0,187
+1_fake/830_sdv5_00039.png,fake,5,200,fake,1,1.0,210
+1_fake/831_sdv5_00039.png,fake,1,200,fake,1,1.0,258
+1_fake/831_sdv5_00039.png,fake,2,200,fake,1,1.0,198
+1_fake/831_sdv5_00039.png,fake,3,200,fake,1,1.0,256
+1_fake/831_sdv5_00039.png,fake,4,200,fake,1,1.0,212
+1_fake/831_sdv5_00039.png,fake,5,200,fake,1,1.0,241
+1_fake/83_adm_153.png,fake,1,200,fake,1,1.0,194
+1_fake/83_adm_153.png,fake,2,200,fake,1,1.0,239
+1_fake/83_adm_153.png,fake,3,200,fake,1,1.0,184
+1_fake/83_adm_153.png,fake,4,200,fake,1,1.0,240
+1_fake/83_adm_153.png,fake,5,200,fake,1,1.0,171
+1_fake/94_adm_153.png,fake,1,200,fake,1,1.0,272
+1_fake/94_adm_153.png,fake,2,200,fake,1,1.0,194
+1_fake/94_adm_153.png,fake,3,200,fake,1,1.0,174
+1_fake/94_adm_153.png,fake,4,200,fake,1,1.0,231
+1_fake/94_adm_153.png,fake,5,200,fake,1,1.0,176
+1_fake/9_adm_153.png,fake,1,200,real,1,0.0,208
+1_fake/9_adm_153.png,fake,2,200,real,1,0.0,248
+1_fake/9_adm_153.png,fake,3,200,real,1,0.0,199
+1_fake/9_adm_153.png,fake,4,200,real,1,0.0,237
+1_fake/9_adm_153.png,fake,5,200,real,1,0.0,195
+1_fake/dalle3_1.png,fake,1,200,fake,1,1.0,238
+1_fake/dalle3_1.png,fake,2,200,fake,1,1.0,296
+1_fake/dalle3_1.png,fake,3,200,fake,1,1.0,262
+1_fake/dalle3_1.png,fake,4,200,fake,1,1.0,205
+1_fake/dalle3_1.png,fake,5,200,fake,1,1.0,217
+1_fake/dalle3_103.png,fake,1,200,fake,1,1.0,204
+1_fake/dalle3_103.png,fake,2,200,fake,1,1.0,235
+1_fake/dalle3_103.png,fake,3,200,fake,1,1.0,191
+1_fake/dalle3_103.png,fake,4,200,fake,1,1.0,270
+1_fake/dalle3_103.png,fake,5,200,fake,1,1.0,224
+1_fake/dalle3_11.png,fake,1,200,fake,1,1.0,194
+1_fake/dalle3_11.png,fake,2,200,fake,1,1.0,235
+1_fake/dalle3_11.png,fake,3,200,fake,1,1.0,208
+1_fake/dalle3_11.png,fake,4,200,fake,1,1.0,230
+1_fake/dalle3_11.png,fake,5,200,fake,1,1.0,186
+1_fake/dalle3_1246.png,fake,1,200,fake,1,1.0,207
+1_fake/dalle3_1246.png,fake,2,200,fake,1,1.0,264
+1_fake/dalle3_1246.png,fake,3,200,fake,1,1.0,196
+1_fake/dalle3_1246.png,fake,4,200,fake,1,1.0,250
+1_fake/dalle3_1246.png,fake,5,200,fake,1,1.0,307
+1_fake/dalle3_1274.png,fake,1,200,fake,1,1.0,253
+1_fake/dalle3_1274.png,fake,2,200,fake,1,1.0,229
+1_fake/dalle3_1274.png,fake,3,200,fake,1,1.0,222
+1_fake/dalle3_1274.png,fake,4,200,fake,1,1.0,194
+1_fake/dalle3_1274.png,fake,5,200,fake,1,1.0,197
+1_fake/dalle3_1284.png,fake,1,200,fake,1,1.0,222
+1_fake/dalle3_1284.png,fake,2,200,fake,1,1.0,275
+1_fake/dalle3_1284.png,fake,3,200,fake,1,1.0,196
+1_fake/dalle3_1284.png,fake,4,200,fake,1,1.0,230
+1_fake/dalle3_1284.png,fake,5,200,fake,1,1.0,219
+1_fake/dalle3_1298.png,fake,1,200,fake,1,1.0,221
+1_fake/dalle3_1298.png,fake,2,200,fake,1,1.0,227
+1_fake/dalle3_1298.png,fake,3,200,fake,1,1.0,251
+1_fake/dalle3_1298.png,fake,4,200,fake,1,1.0,192
+1_fake/dalle3_1298.png,fake,5,200,fake,1,1.0,303
+1_fake/dalle3_147.png,fake,1,200,fake,1,1.0,255
+1_fake/dalle3_147.png,fake,2,200,fake,1,1.0,189
+1_fake/dalle3_147.png,fake,3,200,fake,1,1.0,264
+1_fake/dalle3_147.png,fake,4,200,fake,1,1.0,215
+1_fake/dalle3_147.png,fake,5,200,fake,1,1.0,261
+1_fake/dalle3_160.png,fake,1,200,fake,1,1.0,262
+1_fake/dalle3_160.png,fake,2,200,fake,1,1.0,235
+1_fake/dalle3_160.png,fake,3,200,fake,1,1.0,268
+1_fake/dalle3_160.png,fake,4,200,fake,1,1.0,205
+1_fake/dalle3_160.png,fake,5,200,fake,1,1.0,261
+1_fake/dalle3_164.png,fake,1,200,fake,1,1.0,220
+1_fake/dalle3_164.png,fake,2,200,fake,1,1.0,279
+1_fake/dalle3_164.png,fake,3,200,fake,1,1.0,273
+1_fake/dalle3_164.png,fake,4,200,fake,1,1.0,229
+1_fake/dalle3_164.png,fake,5,200,fake,1,1.0,252
+1_fake/dalle3_43.png,fake,1,200,fake,1,1.0,219
+1_fake/dalle3_43.png,fake,2,200,fake,1,1.0,212
+1_fake/dalle3_43.png,fake,3,200,fake,1,1.0,186
+1_fake/dalle3_43.png,fake,4,200,fake,1,1.0,229
+1_fake/dalle3_43.png,fake,5,200,fake,1,1.0,190
+1_fake/dalle3_45.png,fake,1,200,fake,1,1.0,261
+1_fake/dalle3_45.png,fake,2,200,fake,1,1.0,191
+1_fake/dalle3_45.png,fake,3,200,fake,1,1.0,260
+1_fake/dalle3_45.png,fake,4,200,fake,1,1.0,256
+1_fake/dalle3_45.png,fake,5,200,fake,1,1.0,197
+1_fake/dalle3_47.png,fake,1,200,fake,1,1.0,245
+1_fake/dalle3_47.png,fake,2,200,fake,1,1.0,225
+1_fake/dalle3_47.png,fake,3,200,fake,1,1.0,182
+1_fake/dalle3_47.png,fake,4,200,fake,1,1.0,276
+1_fake/dalle3_47.png,fake,5,200,fake,1,1.0,257
+1_fake/dalle3_52.png,fake,1,200,fake,1,1.0,185
+1_fake/dalle3_52.png,fake,2,200,fake,1,1.0,238
+1_fake/dalle3_52.png,fake,3,200,fake,1,1.0,174
+1_fake/dalle3_52.png,fake,4,200,fake,1,1.0,270
+1_fake/dalle3_52.png,fake,5,200,fake,1,1.0,279
+1_fake/dalle3_54.png,fake,1,200,fake,1,1.0,190
+1_fake/dalle3_54.png,fake,2,200,fake,1,1.0,271
+1_fake/dalle3_54.png,fake,3,200,fake,1,1.0,211
+1_fake/dalle3_54.png,fake,4,200,fake,1,1.0,270
+1_fake/dalle3_54.png,fake,5,200,fake,1,1.0,213
+1_fake/dalle3_71.png,fake,1,200,fake,1,1.0,210
+1_fake/dalle3_71.png,fake,2,200,fake,1,1.0,243
+1_fake/dalle3_71.png,fake,3,200,fake,1,1.0,196
+1_fake/dalle3_71.png,fake,4,200,fake,1,1.0,282
+1_fake/dalle3_71.png,fake,5,200,fake,1,1.0,243
+1_fake/dalle3_77.png,fake,1,200,fake,1,1.0,249
+1_fake/dalle3_77.png,fake,2,200,fake,1,1.0,175
+1_fake/dalle3_77.png,fake,3,200,fake,1,1.0,210
+1_fake/dalle3_77.png,fake,4,200,fake,1,1.0,192
+1_fake/dalle3_77.png,fake,5,200,fake,1,1.0,321
+1_fake/dalle3_8.png,fake,1,200,fake,1,1.0,229
+1_fake/dalle3_8.png,fake,2,200,fake,1,1.0,222
+1_fake/dalle3_8.png,fake,3,200,fake,1,1.0,200
+1_fake/dalle3_8.png,fake,4,200,fake,1,1.0,264
+1_fake/dalle3_8.png,fake,5,200,fake,1,1.0,243
+1_fake/dalle3_80.png,fake,1,200,fake,1,1.0,222
+1_fake/dalle3_80.png,fake,2,200,fake,1,1.0,230
+1_fake/dalle3_80.png,fake,3,200,fake,1,1.0,178
+1_fake/dalle3_80.png,fake,4,200,fake,1,1.0,265
+1_fake/dalle3_80.png,fake,5,200,fake,1,1.0,191
+1_fake/dalle3_86.png,fake,1,200,fake,1,1.0,303
+1_fake/dalle3_86.png,fake,2,200,fake,1,1.0,217
+1_fake/dalle3_86.png,fake,3,200,fake,1,1.0,232
+1_fake/dalle3_86.png,fake,4,200,real,1,0.0,255
+1_fake/dalle3_86.png,fake,5,200,real,1,0.0,197
+1_fake/midjourney6_1.png,fake,1,200,real,1,0.0,287
+1_fake/midjourney6_1.png,fake,2,200,real,1,0.0,209
+1_fake/midjourney6_1.png,fake,3,200,real,1,0.0,257
+1_fake/midjourney6_1.png,fake,4,200,real,1,0.0,204
+1_fake/midjourney6_1.png,fake,5,200,real,1,0.0,198
+1_fake/midjourney6_101.png,fake,1,200,fake,1,1.0,252
+1_fake/midjourney6_101.png,fake,2,200,fake,1,1.0,310
+1_fake/midjourney6_101.png,fake,3,200,fake,1,1.0,196
+1_fake/midjourney6_101.png,fake,4,200,fake,1,1.0,198
+1_fake/midjourney6_101.png,fake,5,200,fake,1,1.0,212
+1_fake/midjourney6_110.png,fake,1,200,fake,1,1.0,205
+1_fake/midjourney6_110.png,fake,2,200,fake,1,1.0,239
+1_fake/midjourney6_110.png,fake,3,200,fake,1,1.0,188
+1_fake/midjourney6_110.png,fake,4,200,fake,1,1.0,242
+1_fake/midjourney6_110.png,fake,5,200,fake,1,1.0,189
+1_fake/midjourney6_1157.png,fake,1,200,fake,1,1.0,268
+1_fake/midjourney6_1157.png,fake,2,200,fake,1,1.0,255
+1_fake/midjourney6_1157.png,fake,3,200,fake,1,1.0,199
+1_fake/midjourney6_1157.png,fake,4,200,fake,1,1.0,262
+1_fake/midjourney6_1157.png,fake,5,200,fake,1,1.0,222
+1_fake/midjourney6_1160.png,fake,1,200,fake,1,1.0,187
+1_fake/midjourney6_1160.png,fake,2,200,fake,1,1.0,241
+1_fake/midjourney6_1160.png,fake,3,200,fake,1,1.0,184
+1_fake/midjourney6_1160.png,fake,4,200,fake,1,1.0,179
+1_fake/midjourney6_1160.png,fake,5,200,fake,1,1.0,255
+1_fake/midjourney6_1177.png,fake,1,200,fake,1,1.0,218
+1_fake/midjourney6_1177.png,fake,2,200,real,1,0.0,233
+1_fake/midjourney6_1177.png,fake,3,200,fake,1,1.0,202
+1_fake/midjourney6_1177.png,fake,4,200,real,1,0.0,242
+1_fake/midjourney6_1177.png,fake,5,200,real,1,0.0,202
+1_fake/midjourney6_126.png,fake,1,200,fake,1,1.0,229
+1_fake/midjourney6_126.png,fake,2,200,fake,1,1.0,167
+1_fake/midjourney6_126.png,fake,3,200,fake,1,1.0,294
+1_fake/midjourney6_126.png,fake,4,200,fake,1,1.0,213
+1_fake/midjourney6_126.png,fake,5,200,fake,1,1.0,192
+1_fake/midjourney6_136.png,fake,1,200,fake,1,1.0,267
+1_fake/midjourney6_136.png,fake,2,200,fake,1,1.0,205
+1_fake/midjourney6_136.png,fake,3,200,fake,1,1.0,227
+1_fake/midjourney6_136.png,fake,4,200,fake,1,1.0,215
+1_fake/midjourney6_136.png,fake,5,200,fake,1,1.0,199
+1_fake/midjourney6_145.png,fake,1,200,fake,1,1.0,265
+1_fake/midjourney6_145.png,fake,2,200,fake,1,1.0,194
+1_fake/midjourney6_145.png,fake,3,200,fake,1,1.0,190
+1_fake/midjourney6_145.png,fake,4,200,fake,1,1.0,206
+1_fake/midjourney6_145.png,fake,5,200,fake,1,1.0,271
+1_fake/midjourney6_147.png,fake,1,200,fake,1,1.0,286
+1_fake/midjourney6_147.png,fake,2,200,fake,1,1.0,202
+1_fake/midjourney6_147.png,fake,3,200,fake,1,1.0,176
+1_fake/midjourney6_147.png,fake,4,200,fake,1,1.0,237
+1_fake/midjourney6_147.png,fake,5,200,fake,1,1.0,199
+1_fake/midjourney6_152.png,fake,1,200,fake,1,1.0,284
+1_fake/midjourney6_152.png,fake,2,200,fake,1,1.0,207
+1_fake/midjourney6_152.png,fake,3,200,fake,1,1.0,206
+1_fake/midjourney6_152.png,fake,4,200,fake,1,1.0,207
+1_fake/midjourney6_152.png,fake,5,200,fake,1,1.0,216
+1_fake/midjourney6_158.png,fake,1,200,fake,1,1.0,242
+1_fake/midjourney6_158.png,fake,2,200,fake,1,1.0,201
+1_fake/midjourney6_158.png,fake,3,200,fake,1,1.0,199
+1_fake/midjourney6_158.png,fake,4,200,fake,1,1.0,200
+1_fake/midjourney6_158.png,fake,5,200,fake,1,1.0,259
+1_fake/midjourney6_28.png,fake,1,200,fake,1,1.0,196
+1_fake/midjourney6_28.png,fake,2,200,fake,1,1.0,198
+1_fake/midjourney6_28.png,fake,3,200,fake,1,1.0,167
+1_fake/midjourney6_28.png,fake,4,200,fake,1,1.0,183
+1_fake/midjourney6_28.png,fake,5,200,fake,1,1.0,166
+1_fake/midjourney6_38.png,fake,1,200,fake,1,1.0,305
+1_fake/midjourney6_38.png,fake,2,200,fake,1,1.0,188
+1_fake/midjourney6_38.png,fake,3,200,fake,1,1.0,310
+1_fake/midjourney6_38.png,fake,4,200,fake,1,1.0,187
+1_fake/midjourney6_38.png,fake,5,200,fake,1,1.0,169
+1_fake/midjourney6_58.png,fake,1,200,fake,1,1.0,227
+1_fake/midjourney6_58.png,fake,2,200,fake,1,1.0,172
+1_fake/midjourney6_58.png,fake,3,200,fake,1,1.0,237
+1_fake/midjourney6_58.png,fake,4,200,fake,1,1.0,192
+1_fake/midjourney6_58.png,fake,5,200,fake,1,1.0,174
+1_fake/midjourney6_65.png,fake,1,200,fake,1,1.0,277
+1_fake/midjourney6_65.png,fake,2,200,fake,1,1.0,184
+1_fake/midjourney6_65.png,fake,3,200,fake,1,1.0,193
+1_fake/midjourney6_65.png,fake,4,200,fake,1,1.0,227
+1_fake/midjourney6_65.png,fake,5,200,fake,1,1.0,302
+1_fake/midjourney6_68.png,fake,1,200,fake,1,1.0,251
+1_fake/midjourney6_68.png,fake,2,200,fake,1,1.0,218
+1_fake/midjourney6_68.png,fake,3,200,fake,1,1.0,192
+1_fake/midjourney6_68.png,fake,4,200,fake,1,1.0,256
+1_fake/midjourney6_68.png,fake,5,200,fake,1,1.0,206
+1_fake/midjourney6_70.png,fake,1,200,fake,1,1.0,256
+1_fake/midjourney6_70.png,fake,2,200,fake,1,1.0,179
+1_fake/midjourney6_70.png,fake,3,200,fake,1,1.0,258
+1_fake/midjourney6_70.png,fake,4,200,fake,1,1.0,223
+1_fake/midjourney6_70.png,fake,5,200,fake,1,1.0,273
+1_fake/sdxl_10.png,fake,1,200,fake,1,1.0,261
+1_fake/sdxl_10.png,fake,2,200,fake,1,1.0,283
+1_fake/sdxl_10.png,fake,3,200,fake,1,1.0,228
+1_fake/sdxl_10.png,fake,4,200,fake,1,1.0,283
+1_fake/sdxl_10.png,fake,5,200,fake,1,1.0,283
+1_fake/sdxl_1126.png,fake,1,200,fake,1,1.0,226
+1_fake/sdxl_1126.png,fake,2,200,fake,1,1.0,290
+1_fake/sdxl_1126.png,fake,3,200,fake,1,1.0,234
+1_fake/sdxl_1126.png,fake,4,200,fake,1,1.0,219
+1_fake/sdxl_1126.png,fake,5,200,fake,1,1.0,255
+1_fake/sdxl_1142.png,fake,1,200,fake,1,1.0,280
+1_fake/sdxl_1142.png,fake,2,200,fake,1,1.0,252
+1_fake/sdxl_1142.png,fake,3,200,fake,1,1.0,186
+1_fake/sdxl_1142.png,fake,4,200,fake,1,1.0,269
+1_fake/sdxl_1142.png,fake,5,200,fake,1,1.0,254
+1_fake/sdxl_1157.png,fake,1,200,fake,1,1.0,208
+1_fake/sdxl_1157.png,fake,2,200,fake,1,1.0,217
+1_fake/sdxl_1157.png,fake,3,200,fake,1,1.0,269
+1_fake/sdxl_1157.png,fake,4,200,fake,1,1.0,202
+1_fake/sdxl_1157.png,fake,5,200,fake,1,1.0,250
+1_fake/sdxl_117.png,fake,1,200,fake,1,1.0,198
+1_fake/sdxl_117.png,fake,2,200,fake,1,1.0,258
+1_fake/sdxl_117.png,fake,3,200,fake,1,1.0,256
+1_fake/sdxl_117.png,fake,4,200,fake,1,1.0,199
+1_fake/sdxl_117.png,fake,5,200,fake,1,1.0,240
+1_fake/sdxl_128.png,fake,1,200,fake,1,1.0,184
+1_fake/sdxl_128.png,fake,2,200,fake,1,1.0,238
+1_fake/sdxl_128.png,fake,3,200,fake,1,1.0,245
+1_fake/sdxl_128.png,fake,4,200,fake,1,1.0,308
+1_fake/sdxl_128.png,fake,5,200,fake,1,1.0,253
+1_fake/sdxl_129.png,fake,1,200,fake,1,1.0,260
+1_fake/sdxl_129.png,fake,2,200,fake,1,1.0,208
+1_fake/sdxl_129.png,fake,3,200,fake,1,1.0,200
+1_fake/sdxl_129.png,fake,4,200,fake,1,1.0,265
+1_fake/sdxl_129.png,fake,5,200,fake,1,1.0,195
+1_fake/sdxl_142.png,fake,1,200,fake,1,1.0,250
+1_fake/sdxl_142.png,fake,2,200,fake,1,1.0,200
+1_fake/sdxl_142.png,fake,3,200,fake,1,1.0,223
+1_fake/sdxl_142.png,fake,4,200,fake,1,1.0,207
+1_fake/sdxl_142.png,fake,5,200,fake,1,1.0,196
+1_fake/sdxl_144.png,fake,1,200,fake,1,1.0,287
+1_fake/sdxl_144.png,fake,2,200,fake,1,1.0,207
+1_fake/sdxl_144.png,fake,3,200,fake,1,1.0,226
+1_fake/sdxl_144.png,fake,4,200,fake,1,1.0,199
+1_fake/sdxl_144.png,fake,5,200,fake,1,1.0,211
+1_fake/sdxl_155.png,fake,1,200,fake,1,1.0,214
+1_fake/sdxl_155.png,fake,2,200,fake,1,1.0,247
+1_fake/sdxl_155.png,fake,3,200,fake,1,1.0,232
+1_fake/sdxl_155.png,fake,4,200,fake,1,1.0,191
+1_fake/sdxl_155.png,fake,5,200,fake,1,1.0,272
+1_fake/sdxl_39.png,fake,1,200,fake,1,1.0,224
+1_fake/sdxl_39.png,fake,2,200,fake,1,1.0,232
+1_fake/sdxl_39.png,fake,3,200,fake,1,1.0,200
+1_fake/sdxl_39.png,fake,4,200,fake,1,1.0,268
+1_fake/sdxl_39.png,fake,5,200,fake,1,1.0,201
+1_fake/sdxl_44.png,fake,1,200,fake,1,1.0,209
+1_fake/sdxl_44.png,fake,2,200,fake,1,1.0,183
+1_fake/sdxl_44.png,fake,3,200,fake,1,1.0,227
+1_fake/sdxl_44.png,fake,4,200,fake,1,1.0,233
+1_fake/sdxl_44.png,fake,5,200,fake,1,1.0,217
+1_fake/sdxl_50.png,fake,1,200,fake,1,1.0,206
+1_fake/sdxl_50.png,fake,2,200,fake,1,1.0,241
+1_fake/sdxl_50.png,fake,3,200,fake,1,1.0,187
+1_fake/sdxl_50.png,fake,4,200,fake,1,1.0,231
+1_fake/sdxl_50.png,fake,5,200,fake,1,1.0,218
+1_fake/sdxl_52.png,fake,1,200,fake,1,1.0,229
+1_fake/sdxl_52.png,fake,2,200,fake,1,1.0,218
+1_fake/sdxl_52.png,fake,3,200,fake,1,1.0,268
+1_fake/sdxl_52.png,fake,4,200,fake,1,1.0,180
+1_fake/sdxl_52.png,fake,5,200,fake,1,1.0,267
+1_fake/sdxl_86.png,fake,1,200,fake,1,1.0,190
+1_fake/sdxl_86.png,fake,2,200,fake,1,1.0,213
+1_fake/sdxl_86.png,fake,3,200,fake,1,1.0,177
+1_fake/sdxl_86.png,fake,4,200,fake,1,1.0,211
+1_fake/sdxl_86.png,fake,5,200,fake,1,1.0,174
+1_fake/sdxl_90.png,fake,1,200,fake,1,1.0,244
+1_fake/sdxl_90.png,fake,2,200,fake,1,1.0,179
+1_fake/sdxl_90.png,fake,3,200,fake,1,1.0,237
+1_fake/sdxl_90.png,fake,4,200,fake,1,1.0,171
+1_fake/sdxl_90.png,fake,5,200,fake,1,1.0,185
+1_fake/sdxl_91.png,fake,1,200,fake,1,1.0,210
+1_fake/sdxl_91.png,fake,2,200,fake,1,1.0,181
+1_fake/sdxl_91.png,fake,3,200,fake,1,1.0,203
+1_fake/sdxl_91.png,fake,4,200,fake,1,1.0,332
+1_fake/sdxl_91.png,fake,5,200,fake,1,1.0,189
+1_fake/sdxl_92.png,fake,1,200,fake,1,1.0,184
+1_fake/sdxl_92.png,fake,2,200,fake,1,1.0,256
+1_fake/sdxl_92.png,fake,3,200,fake,1,1.0,209
+1_fake/sdxl_92.png,fake,4,200,fake,1,1.0,222
+1_fake/sdxl_92.png,fake,5,200,fake,1,1.0,199

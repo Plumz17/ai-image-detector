@@ -1,70 +1,39 @@
-# Slim server: same /health and /predict contract as backend/app/main.py, but the model runs on
-# LiteRT + NumPy (no PyTorch, OpenCV or scikit-learn). See ../README.md for what is and isn't equal.
-import io, logging, math, os, threading, time, uuid
+# The web API: /health and /predict.
+# Same contract as backend/app/main.py, but the model runs on LiteRT + NumPy.
+import logging
+import time
+import uuid
 from contextlib import asynccontextmanager
 
-import numpy as np
-from ai_edge_litert.interpreter import Interpreter
 from fastapi import FastAPI, File, Request, UploadFile
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from PIL import Image
 from slowapi import Limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from app import np_pipeline
+from app import config, pipeline
 
+# Log request id, duration, status and label.
+logging.basicConfig(level=config.LOG_LEVEL, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("app")
-logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO").upper(), format="%(asctime)s %(levelname)s %(message)s")
-
-MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "model")
-MAX_UPLOAD_BYTES = 10 * 1024 * 1024
-REQUEST_TIMEOUT_SECONDS = float(os.getenv("REQUEST_TIMEOUT_SECONDS", "30"))   # how long a request may wait for its turn before a 503
-RATE_LIMIT = os.getenv("RATE_LIMIT", "10/minute")      # same setting and default as backend/app/config.py
-MIN_SIDE, MAX_PIXELS, MAX_CROPS = 64, 25_000_000, 8
-state = {}                      # filled at startup: {"params": ..., "interp": ..., "cnn": ...}
-lock = threading.Lock()         # the LiteRT interpreter is not thread-safe: one prediction at a time
 
 
-class ApiError(Exception):
-    def __init__(self, status_code, message):
-        self.status_code, self.message = status_code, message
-
-
-def error_response(status_code, message):
-    return JSONResponse(status_code=status_code, content={"status": "error", "message": message})
-
-
-def load_model():
-    interp = Interpreter(model_path=os.path.join(MODEL_DIR, "cnn.tflite"))
-    interp.allocate_tensors()
-    ins, out = interp.get_input_details(), interp.get_output_details()[0]
-
-    def cnn(frt, fpt):
-        interp.set_tensor(ins[0]["index"], frt)
-        interp.set_tensor(ins[1]["index"], fpt)
-        interp.invoke()
-        return interp.get_tensor(out["index"])
-
-    state["params"] = dict(np.load(os.path.join(MODEL_DIR, "params.npz")))
-    state["cnn"] = cnn
-
-
+# Code that runs once at startup: load the model once.
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
-        load_model()
+        pipeline.load_pipeline()
         log.info("Model loaded")
     except Exception:
         log.exception("Model failed to load")
     yield
+    # nothing to clean up on shutdown
 
 
-
-
+# Which client a request belongs to, for the rate limit.
 def client_key(request: Request):
     # Behind a platform proxy every request would look like it comes from the proxy. The LAST X-Forwarded-For entry
     # is the address that proxy saw, so a client cannot fake it by sending its own header.
@@ -72,90 +41,87 @@ def client_key(request: Request):
     return forwarded.split(",")[-1].strip() if forwarded else get_remote_address(request)
 
 
-limiter = Limiter(key_func=client_key)      # counters live in memory: fine for a single container
+# The app, rate limiter and CORS.
+limiter = Limiter(key_func=client_key)  # counters live in memory: fine for a single container
 app = FastAPI(title="AI PatchCraft Image Detector (slim)", version="0.1", lifespan=lifespan)
 app.state.limiter = limiter
-# Same setting and defaults as backend/app/config.py: web addresses allowed to call the API, comma separated
-_origins = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173")
-app.add_middleware(CORSMiddleware, allow_origins=[o.strip() for o in _origins.split(",") if o.strip()],
+app.add_middleware(CORSMiddleware, allow_origins=config.CORS_ORIGINS,
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 
 
-# Same checks and messages as backend/app/pipeline.py::_validate_image
-def validate_image(data):
-    try:
-        img = Image.open(io.BytesIO(data))
-        if img.format not in ("JPEG", "PNG"):
-            raise ApiError(400, "File must be a JPG or PNG image.")
-        w, h = img.size
-        if min(w, h) < MIN_SIDE:
-            raise ApiError(400, f"Image is too small (shortest side must be at least {MIN_SIDE} px).")
-        if w * h > MAX_PIXELS:
-            raise ApiError(400, "Image has too many pixels.")
-        if math.ceil(max(w, h) / min(w, h)) > MAX_CROPS:
-            raise ApiError(400, "Image shape is too long and thin.")
-        img.load()              # forces a full decode, so corrupt files fail here
-    except ApiError:
-        raise
-    except Image.DecompressionBombError:
-        raise ApiError(400, "Image has too many pixels.")
-    except Exception:
-        raise ApiError(400, "File is not a valid or readable image.")
+# Helper function to send error response
+def error_response(status_code, message):
+    return JSONResponse(status_code=status_code, content={
+        "status": "error",
+        "message": message
+    })
 
-
-@app.exception_handler(ApiError)
-async def api_error_handler(request, exc):
+# Our own errors from pipeline.py (bad image, too small, server busy, model not loaded)
+@app.exception_handler(pipeline.PipelineError)
+async def pipeline_error_handler(request: Request, exc: pipeline.PipelineError):
     return error_response(exc.status_code, exc.message)
 
 
-@app.exception_handler(RateLimitExceeded)
-async def rate_limit_handler(request, exc):
-    return error_response(429, "Too many requests. Please wait a moment and try again.")
-
-
+# FastAPI's own input check failed, e.g. the "file" field is missing (default is 422)
 @app.exception_handler(RequestValidationError)
-async def validation_error_handler(request, exc):
+async def validation_error_handler(request: Request, exc: RequestValidationError):
     return error_response(400, "Missing or invalid 'file' field.")
 
 
+# Unknown URL (404), wrong method (405), and any HTTPException raised by FastAPI itself
 @app.exception_handler(StarletteHTTPException)
-async def http_error_handler(request, exc):
+async def http_error_handler(request: Request, exc: StarletteHTTPException):
     return error_response(exc.status_code, str(exc.detail))
 
 
+# Too many requests from one client (slowapi's own handler would break the contract)
+@app.exception_handler(RateLimitExceeded)
+async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return error_response(429, "Too many requests. Please wait a moment and try again.")
+
+
+# Anything unexpected: log the full traceback, but never send it to the client
 @app.exception_handler(Exception)
-async def unexpected_error_handler(request, exc):
+async def unexpected_error_handler(request: Request, exc: Exception):
     log.exception("Unexpected error")
     return error_response(500, "Internal server error.")
 
 
+# GET /health
 @app.get("/health")
 async def check_health():
-    return {"status": "ok", "model_loaded": "cnn" in state}
+    return {"status": "ok", "model_loaded": pipeline.is_loaded()}
 
-
-@app.post("/predict", summary="Classify one image as real or fake")
-@limiter.limit(RATE_LIMIT)
+# POST /predict
+@app.post("/predict", summary="Classify one image as real or fake", responses={
+    400: {"description": "No file, not a JPG/PNG, corrupt, empty, too small, or too oddly shaped"},
+    413: {"description": "File is larger than 10 MB"},
+    429: {"description": "Too many requests (rate limit)"},
+    500: {"description": "Unexpected server error"},
+    503: {"description": "Model not loaded, or the server was too busy"},
+})
+# Rate Limiting
+@limiter.limit(config.RATE_LIMIT)
 def predict(request: Request, file: UploadFile = File()):
-    start, request_id = time.perf_counter(), uuid.uuid4().hex[:8]
-    data = file.file.read(MAX_UPLOAD_BYTES + 1)
-    if len(data) > MAX_UPLOAD_BYTES:
+    start = time.perf_counter() # Start Timer
+    request_id = uuid.uuid4().hex[:8] # Make UUID for Logging
+    data = file.file.read(config.MAX_UPLOAD_BYTES + 1) # Read data
+    if len(data) > config.MAX_UPLOAD_BYTES: # Respond with 413 if file is too large
+        log.warning("predict id=%s rejected: file too large", request_id)
         return error_response(413, "File is larger than 10 MB.")
-    if len(data) == 0:
+    elif len(data) == 0: # Respond with 400 if file is empty
+        log.warning("predict id=%s rejected: empty file", request_id)
         return error_response(400, "Empty file.")
-    if "cnn" not in state:
-        return error_response(503, "Model has not been loaded")
-    validate_image(data)        # before the lock, so bad uploads fail fast
-    if not lock.acquire(timeout=REQUEST_TIMEOUT_SECONDS):
-        return error_response(503, "Server busy, try again later")
     try:
-        result = np_pipeline.classify(data, state["params"], state["cnn"])
+        result = pipeline.predict(data) # If file is valid, predict image
+    except pipeline.PipelineError:
+        raise # Known errors are turned into the contract shape by pipeline_error_handler
     except Exception:
         # Answer from inside the route so the response still gets the CORS headers
         log.exception("Unexpected error in predict id=%s", request_id)
         return error_response(500, "Internal server error.")
-    finally:
-        lock.release()
-    log.info("predict id=%s label=%s crops=%s ms=%d", request_id, result["label"],
-             result["crops_analyzed"], (time.perf_counter() - start) * 1000)
+    elapsed_ms = (time.perf_counter() - start) * 1000 # Stop Timer
+    # Log prediction
+    log.info("predict id=%s label=%s crops=%s ms=%d",
+             request_id, result["label"], result["crops_analyzed"], elapsed_ms)
     return {"status": "success", **result}
