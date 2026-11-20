@@ -1,10 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Animated, StyleSheet, Text, View } from 'react-native';
 import { Body, Caption, Header, PrimaryButton, StepLabel } from '../components/UI';
 import { colors } from '../theme';
+import { SLOW_NOTE } from '../describe';
 
 export function Loading({ onCancel }: { onCancel: () => void }) {
   const pulse = useRef(new Animated.Value(.6)).current;
+  const [slow, setSlow] = useState(false);
+  useEffect(() => { const t = setTimeout(() => setSlow(true), 5000); return () => clearTimeout(t); }, []);
   useEffect(() => {
     const loop=Animated.loop(Animated.sequence([
       Animated.timing(pulse,{toValue:1,duration:850,useNativeDriver:true}),
@@ -20,7 +23,7 @@ export function Loading({ onCancel }: { onCancel: () => void }) {
       <Text style={styles.sub}>Sending the image to the detection server and waiting for its prediction.</Text>
       <View style={styles.indicator}><ActivityIndicator size="small" color={colors.purple}/><Text style={styles.indicatorText}>Analysis in progress</Text></View>
     </View>
-    <Caption style={{ textAlign:'center',marginBottom:15 }}>Processing time depends on the model and connection.</Caption>
+    <Caption style={{ textAlign:'center',marginBottom:15 }}>{slow ? SLOW_NOTE : 'Analyzing image…'}</Caption>
     <PrimaryButton title="Cancel Analysis" onPress={onCancel} secondary/>
   </Body>;
 }

@@ -6,18 +6,18 @@ import { colors } from '../theme';
 export function Home({ onGallery, onCamera }: { onGallery: () => void; onCamera: () => void }) {
   return <Body>
     <Header title="VeriPixel" />
-    <View style={{ marginTop: 24 }}><Tag>AI IMAGE DETECTOR</Tag></View>
+    <View style={{ marginTop: 24 }}><Tag>DIGITAL AUTHENTICITY CHECK</Tag></View>
     <Text style={styles.head}>Is it real</Text><Text style={styles.headAccent}>or AI?</Text>
-    <Caption style={styles.subtitle}>Upload an image to explore possible signs of AI-generated content.</Caption>
+    <Caption style={styles.subtitle}>See what may be behind the pixels. Upload an image and let our model analyze it.</Caption>
     <Card style={styles.uploadCard}>
       <View style={styles.uploadIcon}><Text style={{ fontSize: 52, color: colors.purpleLight, marginTop: -6 }}>↑</Text></View>
       <Text style={styles.uploadTitle}>Upload an image</Text>
-      <Caption>JPG or PNG · Max 10 MB</Caption>
+      <Caption>JPG or PNG · Up to 10 MB</Caption>
       <View style={{ alignSelf: 'stretch', marginTop: 23 }}><PrimaryButton title="Choose Image" icon="→" onPress={onGallery} /></View>
       <Pressable accessibilityRole="button" onPress={onCamera} style={styles.camera}><Text style={styles.cameraText}>◎  Or take a photo</Text></Pressable>
     </Card>
     <View style={styles.note}><View style={styles.noteIcon}><Text style={{ color: colors.cyan, fontSize: 23 }}>◇</Text></View>
-      <View style={{ flex: 1 }}><Text style={styles.noteTitle}>Simple and focused</Text><Caption>No scan history is saved in this app. Images are sent to the detection server for analysis.</Caption></View>
+      <View style={{ flex: 1 }}><Text style={styles.noteTitle}>Simple and focused</Text><Caption>Your image is analyzed in memory and never stored.</Caption></View>
     </View>
   </Body>;
 }

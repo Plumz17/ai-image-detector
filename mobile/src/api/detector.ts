@@ -12,7 +12,7 @@ const MESSAGES: Record<number, string> = {
 export async function detectImage(image: UploadImage, signal?: AbortSignal): Promise<DetectionResult> {
   try {
     const r = await predict(image.uri, image.mimeType, image.size ?? undefined, signal);
-    return { verdict: r.label === 'fake' ? 'ai' : 'real', confidence: null, aiProbability: null, explanation: null, model: null, isDemo: false };
+    return { verdict: r.label === 'fake' ? 'ai' : 'real', crops: r.cropsAnalyzed, flagged: Math.round(r.fakeCropRatio * r.cropsAnalyzed) };
   } catch (e) {
     if (!(e instanceof ApiError)) throw e;
     throw new Error(e.status === 400 ? e.message : MESSAGES[e.status] ?? 'Something went wrong. Please try again.');
