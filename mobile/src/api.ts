@@ -20,9 +20,10 @@ export class ApiError extends Error {
   }
 }
 
-async function request(path: string, init?: RequestInit) {
+async function request(path: string, init?: RequestInit, signal?: AbortSignal) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  signal?.addEventListener('abort', () => ctrl.abort(), { once: true }); // lets the UI cancel a request
   try {
     const res = await fetch(BASE_URL + path, { ...init, signal: ctrl.signal });
     const body = await res.json().catch(() => null);
@@ -49,7 +50,7 @@ export async function health(): Promise<{ modelLoaded: boolean }> {
 
 // mimeType is kept for callers but no longer needed: the file's type is read from the file itself.
 // sizeBytes: pass the picker's fileSize if you have it, so oversized files fail before uploading.
-export async function predict(uri: string, mimeType = 'image/jpeg', sizeBytes?: number): Promise<PredictResult> {
+export async function predict(uri: string, mimeType = 'image/jpeg', sizeBytes?: number, signal?: AbortSignal): Promise<PredictResult> {
   if (sizeBytes !== undefined && sizeBytes > MAX_BYTES) {
     throw new ApiError(413, 'File is larger than 10 MB.');
   }
@@ -59,7 +60,7 @@ export async function predict(uri: string, mimeType = 'image/jpeg', sizeBytes?: 
   // Expo's fetch (the global fetch since SDK 53+) needs a real file object (a Blob), not React Native's old {uri, name, type}.
   // The bytes are sent unchanged: the model reads pixel texture, so never resize or recompress.
   form.append('file', new File(uri) as any);
-  const body = await request('/predict', { method: 'POST', body: form });
+  const body = await request('/predict', { method: 'POST', body: form }, signal);
   return {
     label: body.label,
     cropsAnalyzed: body.crops_analyzed,

@@ -1,12 +1,13 @@
 {
   "expo": {
-    "name": "AI Image Detector",
+    "name": "VeriPixel",
     "slug": "ai-image-detector",
     "plugins": [
       [
         "expo-image-picker",
         {
-          "cameraPermission": "Allow the app to use the camera to check a photo.",
+          "photosPermission": "Select a photo to analyze with VeriPixel.",
+          "cameraPermission": "Take a photo to analyze with VeriPixel.",
           "microphonePermission": false
         }
       ]
@@ -14,14 +15,14 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "com.capstone.aiimagedetector",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#090F1E",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -36,6 +37,8 @@
         "projectId": "cad270a2-023d-4f74-ae76-bf1ae42ce662"
       }
     },
-    "owner": "capstone-project-ugm"
+    "owner": "capstone-project-ugm",
+    "scheme": "veripixel",
+    "backgroundColor": "#090F1E"
   }
 }
