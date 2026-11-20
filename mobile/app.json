@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "VeriPixel",
+    "name": "AI Image Detector",
     "slug": "ai-image-detector",
     "plugins": [
       [
         "expo-image-picker",
         {
-          "photosPermission": "Select a photo to analyze with VeriPixel.",
-          "cameraPermission": "Take a photo to analyze with VeriPixel.",
+          "photosPermission": "Select a photo to check with AI Image Detector.",
+          "cameraPermission": "Take a photo to check with AI Image Detector.",
           "microphonePermission": false
         }
       ]
@@ -38,7 +38,7 @@
       }
     },
     "owner": "capstone-project-ugm",
-    "scheme": "veripixel",
+    "scheme": "aiimagedetector",
     "backgroundColor": "#090F1E"
   }
 }

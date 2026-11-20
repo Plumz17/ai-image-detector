@@ -17,7 +17,7 @@ import { detectImage } from './src/api/detector';
 import { colors } from './src/theme';
 import type { DetectionResult, Screen, UploadImage } from './src/types';
 
-function VeriPixel() {
+function AppShell() {
   const [screen, setScreen] = useState<Screen>('welcome');
   const [selected, setSelected] = useState<UploadImage | null>(null);
   const [result, setResult] = useState<DetectionResult | null>(null);
@@ -49,7 +49,7 @@ function VeriPixel() {
       const response = source === 'camera' ? await ImagePicker.launchCameraAsync(pickerOptions) : await ImagePicker.launchImageLibraryAsync(pickerOptions);
       if (response.canceled || response.assets.length === 0) return;
       const asset = response.assets[0];
-      const name = asset.fileName || `veripixel-${Date.now()}.jpg`;
+      const name = asset.fileName || `photo-${Date.now()}.jpg`;
       const type = asset.mimeType || (name.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg');
       if (!['image/jpeg','image/png'].includes(type.toLowerCase())) {
         Alert.alert('Unsupported image', 'Please choose a JPG or PNG image. You may need to export HEIC/HEIF photos as JPG.'); return;
@@ -117,5 +117,5 @@ function VeriPixel() {
     {showNav && <BottomNav active={screen==='about'?'about':'detector'} onDetector={toHome} onAbout={() => { cancelActive(); setScreen('about'); }}/>}
   </SafeAreaView>;
 }
-export default function App() { return <SafeAreaProvider><VeriPixel/></SafeAreaProvider>; }
+export default function App() { return <SafeAreaProvider><AppShell/></SafeAreaProvider>; }
 const styles = StyleSheet.create({safe:{flex:1,backgroundColor:colors.bg}});

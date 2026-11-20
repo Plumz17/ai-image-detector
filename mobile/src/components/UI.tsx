@@ -11,7 +11,7 @@ export function Body({ children, style, scroll = true }: { children: React.React
 export function Brand({ compact = false }: { compact?: boolean }) {
   return <View style={styles.brandRow}>
     <View style={styles.brandGlyph}><Text style={styles.brandStar}>✦</Text></View>
-    <Text style={[styles.brandTitle, compact && { fontSize: 19 }]}>VeriPixel</Text>
+    <Text style={[styles.brandTitle, compact && { fontSize: 19 }]}>AI Image Detector</Text>
   </View>;
 }
 
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   brandRow: { flexDirection: 'row', gap: 9, alignItems: 'center' },
   brandGlyph: { width: 31, height: 31, borderRadius: 11, backgroundColor: '#28224C', alignItems: 'center', justifyContent: 'center' },
   brandStar: { fontSize: 21, color: colors.purpleLight },
-  brandTitle: { fontSize: 23, fontWeight: '800', color: colors.text, letterSpacing: -0.5 },
+  brandTitle: { fontSize: 20, fontWeight: '800', color: colors.text, letterSpacing: -0.5 },
   header: { height: 63, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   headerBubble: { borderRadius: 15, width: 35, height: 35, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.elevated },
   backCircle: { width: 38, height: 38, borderRadius: 12, backgroundColor: colors.surface, justifyContent: 'center', alignItems: 'center', borderWidth: 1, borderColor: colors.line },

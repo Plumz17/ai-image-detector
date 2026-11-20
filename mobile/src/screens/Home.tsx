@@ -5,7 +5,7 @@ import { colors } from '../theme';
 
 export function Home({ onGallery, onCamera }: { onGallery: () => void; onCamera: () => void }) {
   return <Body>
-    <Header title="VeriPixel" />
+    <Header title="AI Image Detector" />
     <View style={{ marginTop: 24 }}><Tag>DIGITAL AUTHENTICITY CHECK</Tag></View>
     <Text style={styles.head}>Is it real</Text><Text style={styles.headAccent}>or AI?</Text>
     <Caption style={styles.subtitle}>See what may be behind the pixels. Upload an image and let our model analyze it.</Caption>
